@@ -1,0 +1,15 @@
+---
+bibliography: BrunaPublications.bib
+csl: biotropica.csl
+---
+
+---
+nocite: '@*'
+...
+
+
+# References
+
+<div id="refs"></div>
+
+# Appendix

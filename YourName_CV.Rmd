@@ -1,0 +1,281 @@
+---
+geometry: margin=1in
+linkcolor: darkmidnightblue
+urlcolor: darkmidnightblue
+fontawesome: yes
+updated: yes
+header-includes:
+- \usepackage{etaremune} # used to number pubs backwards
+- \usepackage[default]{sourcesanspro}
+- \usepackage{fancyhdr} # to alter header and footer
+- \pagestyle{fancy} 
+- \fancyfoot[R]{`r format(Sys.time(), '%B %Y')`} # bottom right of page
+- \fancyhead[R]{Emilio M. Bruna, p. \thepage} # top right of page
+- \usepackage{setspace}
+- \usepackage{parskip}
+- \usepackage{xcolor}
+- \AtBeginDocument{\let\maketitle\relax} # removes the standard Rmd title / date
+# this changes the location and color of the sections, subsections, etc.
+- \usepackage{sectsty} \sectionfont{\centering\color{darkmidnightblue}} # 
+- \usepackage{sectsty} \subsubsectionfont{\color{darkmidnightblue}}
+# define colors
+- \definecolor{darkcerulean}{rgb}{0.03, 0.27, 0.49}
+- \definecolor{darkmidnightblue}{rgb}{0.0, 0.2, 0.4}
+- \usepackage{xhfill} # used to make the line
+output: pdf_document
+# output: word_document
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE,message=FALSE,warning=FALSE)
+library(tidyverse)
+library(gridExtra)
+library(kableExtra)
+# library(citr)
+# library(RefManageR)
+```
+<!-- \begin{document}. -->
+
+<!-- this next line suppresses the header (line, name,  page number) on 1st page -->
+\thispagestyle{empty}  
+
+# YOUR NAME
+\vspace{-0.3cm}  <!--space between name and address -->
+<!--\hfill moves all way to right -->
+University of Florida\hfill email@ufl.edu  
+Dept. of Metaphysics\hfill +1 (352) 867-5309  
+PO Box 110430\hfill&nbsp;[www.your-web-site.org](www.your-web-site.org)  
+Gainesville, FL 32611-1234 USA\hfill&nbsp;[\@YouTwitterOrGithub](https://twitter.com/you) 
+\vspace{-0.5cm}  <!--there was too much space, so reduced it with minus: -Xcm -->
+
+\par\noindent\rule{\textwidth}{0.4pt} <!-- makes the line   -->
+<!-- \textbf{\textcolor{darkmidnightblue}{RESEARCH \& TEACHING INTERESTS:}} some, keywords, about, your research topics   -->
+
+<!-- \textbf{\textcolor{darkmidnightblue}{LANGUAGES:}} Fluent in Spanish, English, Esperanto, and French   -->
+
+\vspace{-0.6cm}  
+
+<!-- ```{r, child=c('one.Rmd', 'two.Rmd')} -->
+<!-- ``` -->
+
+<!-- ```{r, child='one.Rmd'} -->
+<!-- ``` -->
+
+### EDUCATION
+<!--to indent a block of stuff treat it as a 'group' and then set leftskip -->
+<!--be sure to indicate where the group ends with \endgroup -->
+
+\begingroup 
+\setlength{\leftskip}{.2cm} 
+
+<!-- ### EDUCATION \hrulefill\ -->
+<!-- TEXT \hrulefill\ -->
+<!-- Here is some text\xfill{1pt} \par -->
+<!-- Here is some text\xfill{8pt} \par -->
+<!-- Here is some text\xhrulefill{darkmidnightblue}{2pt}\par -->
+<!-- Here is some text\xhrulefill{darkmidnightblue}{1ex}\par -->
+<!-- HOW TO MAKE LINE COLOR SAME'? -->
+<!-- https://tex.stackexchange.com/questions/32597/vertically-centered-horizontal-rule-filling-the-rest-of-a-line -->
+<!-- \textbf{\textcolor{darkmidnightblue}{EDUCATION }}\xrfill[0.5ex]{0.5pt} -->
+
+<!-- ### EDUCATION \hrulefill -->
+
+
+
+2001\hspace{4mm} Ph.D. in Biology, University of Mars  
+<!-- &nbsp;&nbsp;&nbsp;&nbsp;\hspace{6mm}  _Dissertation Advisor: Person Name_   -->
+1995\hspace{4mm} M.S. in Biology, University of Venus  
+<!-- &nbsp;&nbsp;&nbsp;&nbsp;\hspace{6mm} _Thesis Advisor: Person Name_   -->
+1994\hspace{4mm} B.S. in Evolution, University of California 
+
+\endgroup 
+
+### PROFESSIONAL APPOINTMENTS
+\begingroup 
+\setlength{\leftskip}{.2cm} 
+
+2020-Present\hspace{6mm}**Professor**, University of California  
+&nbsp;\hspace{24mm}Department of Wildlife Ecology
+
+2018-2020\hspace{10mm}**President**, Student Group 
+
+2017-2018\hspace{10mm}**Treasurer**, Student Group
+
+\endgroup
+
+
+\vspace{-0.2cm}
+### FELLOWSHIPS AND AWARDS
+
+\begingroup 
+\setlength{\leftskip}{.2cm} 
+2022\hspace{4mm}Graduate Fellowship, University of Florida  
+2020\hspace{4mm}Best Presentation, Ecological Society of Mexico  
+2020\hspace{4mm}Outstanding Teaching Assistant, UF College of Agricultural and Life   Sciences    
+
+\endgroup
+
+
+### RESEARCH GRANTS    
+
+\begingroup 
+\setlength{\leftskip}{.2cm}  
+
+1. MH Foundaiton. 'Support for the Study of bugs' ($100,000, 2022-2023)
+
+1. MNGA Foundation. 'Bugs are great' ($74,060, 2020-2021)
+
+\endgroup
+
+### PUBLICATIONS  
+
+1. Squire, K. (2011). Video games and learning: Teaching and participatory culture in the digital age. Teachers College Press. 
+
+2. Wang, Q., Chen, W., & Liang, Y. (2017). Effects of inquiry-based learning supported by mobile technology on students’ learning achievements and attitudes. Journal of Educational Technology Development and Exchange, 8(1), 1-20. 
+
+3. Wong, L. H., Chai, C. S., & Tan, E. (2016). Virtual laboratories in science education: A review of the literature. Journal of Educational Technology Development and Exchange, 9(1), 1-19. 
+
+<!-- ### SOFTWARE  -->
+
+<!-- ### OTHER WRITING & SCHOLARLY COMMUNICATION -->
+
+<!-- ### PUBLICLY ARCHIVED DATASETS & CODE  -->
+
+<!-- ### MANUSCRIPTS IN PREPARATION  -->
+
+### TEACHING EXPERIENCE
+\begingroup 
+\setlength{\leftskip}{.2cm}  
+Guest Lecture, The Future of Rain Forests (Undergraduate, 2022)  
+Instructor, Data Collection & Field Methods (Graduate, 2019)  
+
+\endgroup 
+
+### GRADUATE STUDENTS ADVISED
+
+```{r GradStudents, echo=FALSE,message = FALSE,warning=FALSE}
+grad_advised<-read_csv("./cv_files/grad_advised.csv") %>% filter(role=="advisor") %>% select(-role)
+kbl(grad_advised,digits = 1,
+                  format = "latex",
+                  align="l",
+    col.names = NULL,
+    longtable = T,
+                  row.names = FALSE,
+                  booktabs=T,
+                  linesep = "") %>%
+  kable_styling(bootstrap_options = c("hover"),
+                latex_options = c("scale_down"),
+                full_width = F,
+                font_size = 10,
+                position = "left") %>%
+  sub("\\\\toprule", "", .) %>%
+  sub("\\\\bottomrule", "", .)
+```
+
+### DOCTORAL STUDENT COMMITTEE SERVICE
+
+```{r DocCmte, echo=FALSE,message = FALSE,warning=FALSE}
+grad_advised<-read_csv("./cv_files/grad_advised.csv") %>% filter(role=="doc_cmte") %>% select(-role)
+kbl(grad_advised,digits = 1,
+                  format = "latex",
+                  align="l",
+                  col.names = NULL,
+                  row.names = FALSE,
+                  booktabs=T,
+                  longtable = T, 
+                  linesep = "") %>%
+  kable_styling(bootstrap_options = c("hover"),
+                latex_options = c("scale_down"),
+                full_width = F,
+                font_size = 10,
+                position = "left") %>%
+  sub("\\\\toprule", "", .) %>%
+  sub("\\\\bottomrule", "", .)
+```
+
+### MASTERS STUDENT COMMITTEE SERVICE
+```{r MastersCmte, echo=FALSE,message = FALSE,warning=FALSE}
+grad_advised<-read_csv("./cv_files/grad_advised.csv") %>% filter(role=="masters_cmte") %>% select(-role)
+kbl(grad_advised,digits = 1,
+                  format = "latex",
+                  align="l",
+        longtable = T, 
+    col.names = NULL,
+                  row.names = FALSE,
+                  booktabs=T,
+                  linesep = "") %>%
+  kable_styling(bootstrap_options = c("hover"),
+                latex_options = c("scale_down"),
+                full_width = F,
+                font_size = 10,
+                position = "left") %>%
+  sub("\\\\toprule", "", .) %>%
+  sub("\\\\bottomrule", "", .)
+```
+
+### SERVICE
+
+\begingroup 
+\setlength{\leftskip}{.2cm}
+Search Committee, UF QUEST Program (2023)  
+Samuel P. Harn Museum of Art Faculty Council (2012-2015)   
+Selection Committee, UF Undergraduate Faculty Mentor/Advisor of the Year (2022)    
+
+__Referee for journals (No. of reviews):__ 
+\setlength{\leftskip}{.2cm}  
+
+*Trends in Ecology and Evolution* (1)   
+*Nature Human Behavior* (1)  
+*Nature Ecology & Evolution* (2)  
+
+\endgroup 
+
+### PRESENTATIONS
+```{r talks, echo=FALSE,message = FALSE,warning=FALSE}
+talks<-read_csv("./cv_files/talks.csv", col_types = cols(.default = "c")) %>% 
+  select(-year)  %>% 
+  replace_na(list(year2=""))
+kbl(talks, 
+      format    = "latex", 
+      align = "l",
+      longtable = T, 
+      row.names = FALSE,
+      col.names = NULL,
+      booktabs=T,
+      linesep = "") %>%
+  kable_styling(bootstrap_options = c("hover"),
+                latex_options = c("scale_down"),
+                full_width = F,
+                font_size = 10,
+                position = "left") %>%
+  sub("\\\\toprule", "", .) %>%
+  sub("\\\\bottomrule", "", .)
+```
+
+<!-- ### INTERVIEWS & MEDIA APPEARANCES   -->
+<!-- \begingroup  -->
+<!-- \setlength{\leftskip}{.2cm}   -->
+
+<!-- 2013\hspace{4mm} Item   -->
+<!-- 2013\hspace{4mm} Item   -->
+
+<!-- \endgroup -->
+
+<!-- ### PROFESSIONAL DEVELOPMENT   -->
+<!-- \begingroup  -->
+<!-- \setlength{\leftskip}{.2cm}   -->
+
+<!-- 2013\hspace{4mm} Item   -->
+<!-- 2013\hspace{4mm} Item   -->
+
+<!-- \endgroup -->
+
+<!-- ### MEMBERSHIPS IN PROFESSIONAL SOCIETIES   -->
+
+<!-- \begingroup  -->
+<!-- \setlength{\leftskip}{.2cm}   -->
+
+<!-- Ecological Society of America   -->
+<!-- Association for Tropical Biology and Conservation   -->
+
+<!-- \endgroup -->

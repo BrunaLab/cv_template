@@ -1,0 +1,17 @@
+---
+title: "pubs"
+author: "Emilio M. Bruna"
+date: "12/30/2020"
+bibliography: chapters.bib
+csl: brunacv2.csl
+
+output: html_document
+---
+
+
+
+---
+nocite: '@*'
+...
+
+<!-- <div id="refs"></div>  -->

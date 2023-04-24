@@ -1,0 +1,15 @@
+/* Whole document: */
+
+/* Headers */
+
+
+body{
+  font-family: Helvetica;
+  font-size: 11pt;
+}
+
+.author,.title{
+    display: none;
+}
+
+

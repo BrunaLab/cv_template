@@ -1,0 +1,123 @@
+---
+title: 'Syllabus'
+author: "Emilio M. Bruna"
+date: "`r format(Sys.time(), '%Y')`"
+web: www.BrunaLab.org
+github: embruna
+twitter: https://twitter.com/BrunaLab
+phone: (352) 514-3935
+email: embruna@ufl.edu
+geometry: margin=1in
+fontsize: 12pt
+linkcolor: blue
+urlcolor: blue
+site: bookdown::bookdown_site
+header-includes:
+- \usepackage{fancyhdr}
+- \pagestyle{fancy}
+- \fancyfoot{}
+- \fancyhead[R]{Syllabus, p. \thepage}
+- \fancyhead[L]{IDS 2935 - Rain Forests (`r format(Sys.time(), '%Y')`)}
+- \usepackage[default]{sourcesanspro}
+- \usepackage{parskip}
+- \usepackage{caption}
+- \usepackage{xcolor}
+- \AtBeginDocument{\let\maketitle\relax}
+# - \usepackage{sectsty} \allsectionsfont{\raggedright}
+- \usepackage{sectsty} \sectionfont{\centering}
+- \usepackage{titlesec}
+- \titlespacing{\section}{0pt}{12pt plus 2pt minus 1pt}{0pt plus 1pt minus 1pt}
+- \titlespacing{\subsection}{0pt}{12pt plus 2pt minus 1pt}{0pt plus 1pt minus 1pt}
+- \titlespacing{\subsubsection}{0pt}{12pt plus 2pt minus 1pt}{0pt plus 1pt minus 1pt}
+output: pdf_document
+  # word_document: default
+#   html_document
+# weight: 5
+    # df_print: paged
+---
+
+```{r setup_syllabus, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(kableExtra)
+library(tidyverse)
+```
+
+# The Future of Rain Forests
+
+## IDS 2935 - Quest 2 - Fall 2022
+\vspace{0.6cm} 
+
+## Course Description & Information
+\vspace{0.3cm} 
+
+Tropical Rain Forests cover approximately 15% of the Earth’s land surface but contain over 50% of the world’s biodiversity. They are also the home to millions of people, the source of products central to our lives, shape global climate, and are being cleared at unprecedented rates. Students in this class will investigate the same fundamental questions asked by scientists that study rain forests: Why are we fascinated by rain forests? How have stereotypes about them permeated everything from pop culture to international relations? What gave rise to their remarkable biodiversity? What are the drivers and consequences of deforestation? Is rain forest conservation compatible with socioeconomic development? 
+
+**By the end of the course students will be able to:**  
+
+* Recognize and describe stereotypes about rain forests & their residents
+* Analyze rain forest tropes in art, literature, & popular culture
+* Discuss & evaluate hypotheses for the origins and maintenance of tropical biodiversity
+* Explain & compare human history in rain forests
+* Review contemporary threats to rain forests
+* Analyze and visualize data on deforestation
+* Review and contrast strategies for rain forest conservation & restoration
+* Identify rain forests in their daily lives & set personal goals for advancing their conservation
+* Produce materials for communicating about rain forests to family and peers
+
+### Class Day, Time, & Location 
+
+\vspace{0.3cm}
+> **Tuesday Period 3** (9:35 - 10:25 AM) in LIT-0237 _and_  
+> **Thursday Periods 3-4** (9:35 - 11:30 AM) in MAEB-0211. 
+
+**Instructor:** Dr. Emilio M. Bruna  
+
+<!-- \vspace{0.3cm} -->
+<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Dr. Emilio M. Bruna**   -->
+
++ **email:** embruna@ufl.edu [email messages via the course Canvas page are preferred]
++ **Phone**: (352) 846-0634
++ **Office Location & Drop-In Hours**: Wednesday and Friday 10:30 am - 12 noon in the Tropical Ecology & Conservation Lab, 711 Newell Drive (for a map to the lab click the "Contact" link at [BrunaLab.org](http://brunalab.org)). You can come to drop-in hours in person or via Zoom (link on class canvas page). If you like, you _sign can up for a specific time slot in advance at [embruna.youcanbook.me](https://embruna.youcanbook.me)_. If you can't make it on those days/times let me know and we will find a time that works for you.  
+
+**Teaching Assistant:** Thomas Smith
+<!-- \vspace{0.3cm} -->
+<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Thomas Smith**   -->
+
++ **email:** thomassmith@ufl.edu  [email via the course Canvas page is preferred]
++ **Office Location & Office Hours**: Wednesday 11 am - 12:30 pm in the Tropical Ecology & Conservation Lab (same location as Dr. Bruna) and zoom or by appointment 
+
+### Why should you come to Drop-In Hours?
+\vspace{0.3cm}
+
+  * To introduce yourself
+  * Because there is _free tea, coffee, or espresso in our lab kitchen_
+  * To get clarification on assignments
+  * It's an opportunity to discuss topics that came up in class 
+  * You can check to make sure you understood the key points from a class session
+  * We can give you feedback on ideas for course projects
+  * Get advice on successfully navigating college
+  * Ask questions about how to gain experience for your post-graduation goals
+  * To get help arranging a study group
+  * _You don't need a reason...just come on by._
+
+**Required & Recommended Course Materials**: All course materials, including readings and videos, will be made available on the course Canvas page. However, many of the assigned articles from the New York Times have dynamic multimedia data visualizations and video that can't be appreciated in pdf format. _Students in this class should sign up for free online access to the NY Times by following the instructions at [this UF Libraries Website](https://businesslibrary.uflib.ufl.edu/c.php?g=943928&p=7708734)._
+
+**Materials and Supplies Fees**: There are no additional fees for this course. 
+
+### **GenEd Information**  
+\vspace{0.3cm}
+* **Primary Designation**: Biological Sciences
+* **Secondary Designation (if seeking)**: International (N)
+* **Writing Designation**: None
+* _A minimum grade of C is required for general education credit_
+* More detailed GenEd and Quest Course Goals and Student Learning Objectives are below
+
+
+## Graded Coursework
+
+
+<!-- \captionsetup[table]{labelformat=empty} -->
+<!-- \definecolor{darkmidnightblue}{HTML}{003366} -->
+<!-- \captionsetup{labelformat=empty,font={color=darkmidnightblue,bf,large}} -->
+

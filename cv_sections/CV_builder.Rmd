@@ -1,0 +1,49 @@
+---
+title: "Curriculum Vitae"
+author: "Emilio M. Bruna"
+date: "`r format(Sys.time(), '%B %Y')`"
+output:
+  pdf_document: default
+  html_document: null
+  df_print: paged
+  toc: no
+  word_document: default
+github: embruna
+twitter: BrunaLab
+phone: "(352) 514-3935"
+email: embruna@ufl.edu
+geometry: margin=1in
+linkcolor: darkmidnightblue
+urlcolor: darkmidnightblue
+fontawesome: yes
+# bibliography: ./emb_cv_modular/EMB_publications.bib
+csl: brunacv.csl
+updated: yes
+header-includes:
+- \usepackage{etaremune}
+- \usepackage[default]{sourcesanspro}
+- \usepackage{fancyhdr}
+- \pagestyle{fancy}
+- \fancyfoot{}
+- \fancyfoot[R]{`r format(Sys.time(), '%B %Y')`}
+- \fancyhead[R]{Emilio M. Bruna, p. \thepage}
+- \usepackage{setspace}
+- \usepackage{parskip}
+- \usepackage{xcolor}
+- \AtBeginDocument{\let\maketitle\relax}
+- \usepackage{sectsty} \sectionfont{\centering\color{darkmidnightblue}}
+- \usepackage{sectsty} \subsubsectionfont{\color{darkmidnightblue}}
+- \definecolor{darkcerulean}{rgb}{0.03, 0.27, 0.49}
+- \definecolor{darkmidnightblue}{rgb}{0.0, 0.2, 0.4}
+- \usepackage{xhfill}
+web: www.BrunaLab.org
+---
+
+
+\definecolor{darkmidnightblue}{HTML}{003366}
+\captionsetup{labelformat=empty,font={color=darkmidnightblue,bf,large}} 
+
+
+```{r, child=c('./cv_rmd_template/cv_sections/advising.Rmd','./cv_rmd_template/cv_sections/grants.Rmd','./cv_rmd_template/cv_sections/publications.Rmd','./cv_rmd_template/cv_sections/teaching.Rmd')}
+```
+

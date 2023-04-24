@@ -1,0 +1,81 @@
+---
+output: 
+  pdf_document:
+    latex_engine: pdflatex
+    template: ./emb-cv.tex
+geometry: margin=1in
+
+title: "CV"
+author: Emilio Miguel Bruna
+# jobtitle: "Professor and Distinguished Teaching Scholar"
+address: "University of Florida · Dept. of Wildlife Ecology & Conservation & Center for Latin American Studies · Gainesville, FL 32611-0430 USA"
+fontawesome: yes
+email: embruna@ufl.edu  
+# github: embruna
+twitter: @BrunaLab
+#osf: "Enter 5 digit osf string here"
+phone: "+1 (352) 846-0634"
+web: www.brunalab.org
+updated: no
+
+keywords: R Markdown, academic CV, template
+
+fontfamily: mathpazo
+fontfamilyoptions: sc, osf
+fontsize: 11pt
+linkcolor: darkmidnightblue
+urlcolor: darkmidnightblue
+---
+
+<!-- # Employment -->
+
+<!-- *Arthur Guinness & Son* -->
+
+<!-- Chief Brewer (Park Royal) \hfill 1935-1937 -->
+
+<!-- Researcher (Dublin) \hfill 1899-1935 -->
+
+<!-- # Education -->
+
+<!-- *New College, Oxford University*, B.A. Chemistry \hfill 1899 -->
+
+
+<!-- # Publications -->
+
+<!-- ## Books -->
+
+<!-- Pearson, E.S. and John Wishart (eds.). 1943. *"Student's" Collected Papers* London: Biometrika Office. -->
+
+<!-- ## Journal Articles -->
+
+<!-- Student. 1938. "Comparison between Balanced and Random Arrangements on Field Plots." *Biometrika* 29(3-4): 363--378. -->
+
+<!-- Student. 1936. "Co-operation in Large Scale Experiments." *Supplement to Journal of the Royal Statistical Society* 3(2): 115--136. -->
+
+<!-- Student. 1931. "On the *z* Test." *Biometrika* 23(3-4): 407-408. -->
+
+<!-- Student. 1931. "The Lanarkshire Milk Experiment." *Biometrika* 23(3-4): 398--406. -->
+
+<!-- Student. 1929. "Statistics in Biological Research." *Nature* 124: 93 -->
+
+<!-- Student. 1927. "Errors of Routine Analysis." *Biometrika* 19(1-2): 151--164. -->
+
+<!-- Student. 1926. "Mathematics and Agronomy." *Journal of the American Society of Agronomy* 18. -->
+
+<!-- Student. 1925. "New Tables for Testing the Significance of Observations." *Metron* 5(3): 105--108. -->
+
+<!-- Student. 1923. "On Testing Varieties of Cereals." *Biometrika* 15(3-4): 271--293. -->
+
+<!-- Student. 1921. "An Experimental Determination of the Probable Error of Dr. Spearman's Correlation Co-efficient" *Biometrika* 13(2-3): 263--282. -->
+
+<!-- Student. 1917. "Tables for Estimating the Probability That the Given Mean of a Unique Sample of Observations Lies between $-\infty$ and Any Given Distance of the Mean of the Population from Which the Sample Is Drawn." *Biometrika* 11(4): 414--417. -->
+
+<!-- Student. 1909. "The Distribution of the Means of Samples Which Are Not Drawn at Random." *Biometrika* 7(1-2): 210--214. -->
+
+<!-- Student. 1908. "Probable Error of a Correlation Coefficient." *Biometrika* 6(2-3): 302--310. -->
+
+<!-- Student. 1908. "The Probable Error of a Mean." *Biometrika* 6(1): 1--25. -->
+
+<!-- Student. 1907. "On the Error of Counting with a Haemacytometer." *Biometrika* 5(3): 351--360. -->
+
+<!-- ## Other Publications -->

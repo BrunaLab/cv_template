@@ -1,0 +1,1157 @@
+---
+title: "Curriculum Vitae"
+# title: "&nbsp;"
+author: "Emilio M. Bruna"
+email: embruna@ufl.edu
+web: www.BrunaLab.org
+github: embruna
+twitter: BrunaLab
+phone: "(352) 514-3935"
+date: "`r format(Sys.time(), '%B %Y')`"
+geometry: margin=1in
+linkcolor: blue
+urlcolor: blue
+tables: true
+jobtitle: "Professor & Distinguished Teaching Scholar, University of Florida"
+address: "PO Box 110430 · 110 Newins-Ziegler Hall · Gainesville, FL 32611-040"
+fontawesome: yes
+bibliography: BrunaPublications.bib
+csl: biotropica.csl
+updated: yes
+site: bookdown::bookdown_site
+header-includes:
+- \usepackage{etaremune} #for reverse-numbered list
+- \usepackage[default]{sourcesanspro}
+- \usepackage{fancyhdr}
+- \pagestyle{fancy}
+- \fancyfoot{}
+- \fancyfoot[R]{`r format(Sys.time(), '%B %Y')`}
+- \fancyhead[R]{Emilio M. Bruna, p. \thepage}
+- \usepackage{setspace}
+- \usepackage{parskip} 
+- \usepackage{xcolor} 
+- \AtBeginDocument{\let\maketitle\relax} # this removes default title section
+  # to center to top level (#) headings - my name 
+  # more info # https://www.ctan.org/pkg/sectsty
+- \usepackage{sectsty} \sectionfont{\centering\color{darkmidnightblue}}
+- \usepackage{sectsty} \subsubsectionfont{\color{darkmidnightblue}}
+# http://latexcolor.com/ to choose colors
+- \definecolor{darkcerulean}{rgb}{0.03, 0.27, 0.49}
+- \definecolor{darkmidnightblue}{rgb}{0.0, 0.2, 0.4}
+# - \setstretch{1.0}
+# https://babichmorrowc.github.io/post/changing-fonts-in-rmarkdown-pdfs/
+output:
+   pdf_document: default
+   html_document:
+   df_print: paged
+---
+
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE,message=FALSE,warning=FALSE)
+library(tidyverse)
+library(gridExtra)
+library(kableExtra)
+library(citr)
+library(RefManageR)
+```
+<!-- this next line suppresses the header (line, name,  page number) on 1st page -->
+\thispagestyle{empty}  
+
+# EMILIO MIGUEL BRUNA
+
+University of Florida\hfill embruna@ufl.edu  
+Dept. of Wildlife Ecology & Conservation &\hfill (352) 846-0634  
+Center for Latin American Studies\hfill www.brunalab.org  
+Gainesville, FL 32611-0430\hfill \@BrunaLab
+
+\textbf{\textcolor{darkmidnightblue}{RESEARCH \& TEACHING INTERESTS:}} Tropical ecology and conservation, plant population ecology, plant-animal interactions, scientometrics and bibliometrics, science & science policy in Latin America  
+
+\textbf{\textcolor{darkmidnightblue}{LANGUAGES:}} Native fluency in Spanish and English, Fluent in Portuguese
+
+### EDUCATION
+\begingroup 
+\setlength{\leftskip}{.2cm} 
+
+2001\hspace{4mm} Ph.D. in Population Biology, University of California, Davis  
+<!-- &nbsp;&nbsp;&nbsp;&nbsp;\hspace{6mm}  _Dissertation Co-Advisors: Susan P. Harrison and Sharon Y. Strauss_   -->
+1995\hspace{4mm} M.S. in Biology, University of California, San Diego  
+<!-- &nbsp;&nbsp;&nbsp;&nbsp;\hspace{6mm} _Thesis Advisor: Ted J. Case_   -->
+1994\hspace{4mm} B.S. in Ecology, Behavior, & Evolution with a minor in Literature, University of California, San Diego  
+
+\endgroup 
+
+<!-- ```{r ed, echo=FALSE,message = FALSE,warning=FALSE} -->
+
+<!-- ed<-read_csv("./education.csv") %>% -->
+<!-- replace_na(list(program=" ", school=" ",year=" ",degree=" ")) -->
+<!-- ed$program<-gsub('","',", ",ed$program) -->
+<!-- ed$school<-gsub('","',", ",ed$school) -->
+<!-- kbl(ed, -->
+<!--     digits = 1, -->
+<!--     format = "latex", -->
+<!--     align="l", -->
+<!--     col.names = NULL, -->
+<!--     longtable = T, -->
+<!--     row.names = FALSE, -->
+<!--     booktabs=T, -->
+<!--     linesep = "") %>% -->
+
+<!--   kable_styling(bootstrap_options = c("hover"), -->
+<!--                 latex_options = c("scale_down"), -->
+<!--                 full_width = F, -->
+<!--                 font_size = 10, -->
+<!--                 position = "left") %>% -->
+<!--   # row_spec(0:0, bold = T) %>% -->
+<!--   # # column_spec(2, width = "35em") %>% -->
+<!--   sub("\\\\toprule", "", .) %>% -->
+<!--   sub("\\\\bottomrule", "", .) -->
+<!-- ``` -->
+
+### PROFESSIONAL APPOINTMENTS
+\begingroup 
+\setlength{\leftskip}{.2cm} 
+
+2013-Present\hspace{6mm}**Professor & Distinguished Teaching Scholar**, University of Florida  
+&nbsp;\hspace{24mm}Department of Wildlife Ecology & Conservation & Center for Latin American Studies  
+
+2012-Present\hspace{6mm}**Director**, Florida-Brazil Linkage Institute, University of Florida   
+&nbsp;\hspace{24mm}Center for Latin American Studies, University of Florida  
+
+2020-2021\hspace{10mm}**President**, Association for Tropical Biology and Conservation  
+
+2013-2019\hspace{10mm}**Editor-in-Chief**, _Biotropica_  
+
+2014-2020\hspace{10mm}**Board of Directors**, Dryad Digital Data Repository  
+
+2005-Present\hspace{6mm}**Adjunct Professor**, Universidade Federal de Uberlândia, Brazil  
+&nbsp;\hspace{24mm}Graduate Program in Ecology and Natural Resource Conservation  
+
+2007-2013\hspace{10mm}**Associate Professor**, University of Florida  
+&nbsp;\hspace{24mm}Department of Wildlife Ecology & Conservation & Center for Latin American Studies  
+
+2002-2007\hspace{10mm}**Assistant Professor**, University of Florida    
+&nbsp;\hspace{24mm}Department of Wildlife Ecology & Conservation & Center for Latin American Studies  
+
+2001-2002\hspace{10mm}**NSF Minority Postdoctoral Fellow**, Biological Dynamics of Forest Fragments Project  
+&nbsp;\hspace{24mm}Instituto Nacional de Pesquisas da Amazônia-Smithsonian Institution  
+
+\endgroup
+
+<!-- ```{r positions, echo=FALSE,message = FALSE,warning=FALSE} -->
+
+<!-- positions<-read_csv("./positions.csv") %>% -->
+<!-- replace_na(list(dates=" ", position=" ")) -->
+
+<!-- # positions<-as.data.frame(positions) -->
+<!-- # positions[1,1] <- cell_spec(positions[1, 1], "latex", bold = T)  -->
+<!-- kbl(positions, -->
+<!--     digits = 1, -->
+<!--     format = "latex", -->
+<!--     align="l", -->
+<!--     col.names = NULL, -->
+<!--     longtable = T, -->
+<!--     row.names = FALSE, -->
+<!--     booktabs=T, -->
+<!--     linesep = "") %>% -->
+
+<!--   kable_styling(bootstrap_options = c("hover"), -->
+<!--                 latex_options = c("scale_down"), -->
+<!--                 full_width = F, -->
+<!--                 font_size = 10, -->
+<!--                 position = "left") %>% -->
+<!--   # row_spec(0:0, bold = T) %>% -->
+<!--   # # column_spec(2, width = "35em") %>% -->
+<!--   sub("\\\\toprule", "", .) %>% -->
+<!--   sub("\\\\bottomrule", "", .) -->
+<!-- ``` -->
+
+
+### AWARDS
+
+<!-- ```{r awards, echo=FALSE,message = FALSE,warning=FALSE} -->
+
+<!-- awards<-read_csv("./fellowships.csv") %>%  -->
+<!--   filter(cat=="award") %>%  -->
+<!--   select(-cat) %>%  -->
+<!--   arrange(desc(year)) -->
+<!-- awards$prize<-gsub('","',",",awards$prize) -->
+<!-- awards$prize<-gsub("for the","\nfor the",awards$prize) -->
+<!-- # awards$prize<- linebreak(awards$prize,double_escape = F, linebreaker = "\\n") -->
+<!-- kbl(awards, -->
+<!--     digits = 1, -->
+<!--     format = "latex", -->
+<!--     align="l", -->
+<!--     col.names = NULL, -->
+<!--     longtable = T, -->
+<!--     row.names = FALSE, -->
+<!--     booktabs=T, -->
+<!--     linesep = "") %>% -->
+<!--   kable_styling(bootstrap_options = c("hover"), -->
+<!--                 latex_options = c("scale_down"), -->
+<!--                 full_width = F, -->
+<!--                 font_size = 10, -->
+<!--                 position = "left") %>% -->
+<!--   # column_spec(2, width = "35em") %>%  -->
+<!--   sub("\\\\toprule", "", .) %>% -->
+<!--   sub("\\\\bottomrule", "", .) -->
+
+<!-- ``` -->
+
+\begingroup 
+\setlength{\leftskip}{.2cm}  
+
+2020\hspace{4mm}Selected for Induction into Alpha Zeta (Faculty Affiliate, UF Chapter)    
+2020\hspace{4mm}Roche Teaching Scholar, UF College of Agricultural and Life Sciences    
+2016\hspace{4mm}Sigma Xi (Full Member, University of Florida Chapter)    
+2014\hspace{4mm}Academy of Distinguished Teaching Scholars, University of Florida  
+2012\hspace{4mm}Outstanding Paper Award, US Chapter of the International Association for Landscape Ecology  
+2011\hspace{4mm}Graduate Advisor & Teacher of the Year, UF College of Agricultural and Life Sciences  
+2009\hspace{4mm}University of Florida Research Foundation Professor  
+2007\hspace{4mm}Julie S. Denslow Outstanding Article Prize, _Biotropica_ & the Association for Tropical Biology & Conservation  
+2005\hspace{4mm}UF International Educator of the Year (untenured faculty category)  
+2003\hspace{4mm}Diversity Scholar, American Institute for Biological Sciences  
+2002\hspace{4mm}John L. Harper Early Career Researcher Award, British Ecological Society  
+1994\hspace{4mm}Ernest C. Mort Leadership Excellence Award, Revelle College, UC San Diego  
+<!-- &nbsp;\quad\quad\quad\quad _for the year’s outstanding contribution to the field, published in any journal_   -->
+<!-- &nbsp;\quad\quad\quad\quad _for the outstanding paper published in the journal Biotropica_   -->
+<!-- &nbsp;\quad\quad\quad\quad _for the outstanding paper by a young investigator in the Journal of Ecology_ -->
+
+\endgroup
+
+### FELLOWSHIPS
+<!-- # ```{r fellowships, echo=FALSE,message = FALSE,warning=FALSE} -->
+<!-- #  -->
+<!-- # fellowships<-read_csv("./fellowships.csv") %>% filter(cat=="fellowship") %>% select(-cat) -->
+<!-- # kbl(fellowships,digits = 1, -->
+<!-- #                   format = "latex", -->
+<!-- #                   align="l", -->
+<!-- #     col.names = NULL, -->
+<!-- #     longtable = T, -->
+<!-- #                   row.names = FALSE, -->
+<!-- #                   booktabs=T, -->
+<!-- #                   linesep = "") %>% -->
+<!-- #   kable_styling(bootstrap_options = c("hover"), -->
+<!-- #                 latex_options = c("scale_down"), -->
+<!-- #                 full_width = F, -->
+<!-- #                 font_size = 10, -->
+<!-- #                 position = "left") %>% -->
+<!-- #   sub("\\\\toprule", "", .) %>% -->
+<!-- #   sub("\\\\bottomrule", "", .) -->
+<!-- #  -->
+<!-- # ``` -->
+
+\begingroup 
+\setlength{\leftskip}{.2cm}  
+2012\hspace{4mm}*Ciência Sem Fronteiras* Special Visiting Researcher Fellowship, CNPq Brazil  
+2009\hspace{4mm}Fulbright Scholar, Brazil  
+2009\hspace{4mm}Visiting Researcher Fellowship, CNPq Brazil  
+2001\hspace{4mm}NSF Minority Postdoctoral Research Fellowship  
+2001\hspace{4mm}NSF International Research Fellowship *(declined)*  
+2000\hspace{4mm}Ford Foundation Dissertation Year Fellowship  
+1999\hspace{4mm}UC Davis Graduate Studies Fellowship  
+1998\hspace{4mm}UC Davis John F. Steindler Graduate Fellowship  
+1995\hspace{4mm}NSF Minority Predoctoral Research Fellowship  
+1993\hspace{4mm}Howard Hughes Senior Honors Thesis Fellowship  
+1993\hspace{4mm}UCSD Howard Hughes Summer Research Fellowship  
+\endgroup
+
+### GRANTS IN SUPPORT OF RESEARCH, TRAINING, & PROGRAM DEVELOPMENT (>$5.5 million)
+
+<!-- \begin{etaremune} -->
+<!-- \item Sloan Foundation. "Reinventing Field Courses" (\$74060; PI E M Bruna Co-PIs R McCleery P Antonenko N Attias D Barton) -->
+<!-- \item 2 -->
+<!-- \end{etaremune} -->
+
+Sloan Foundation. “Reinventing Field Courses” ($74,060; PI: E. M. Bruna, Co-PIs: R. McCleery, P. Antonenko, N. Attias, D. Barton)
+
+National Science Foundation. SG: Synergistic effects of forest fragmentation and droughts on tropical plant population dynamics ($199,904; PI: E. M. Bruna, Co-PIs: M. Uriarte)
+
+National Science Foundation. “The role of the matrix in fragmented landscapes: experimental tests and novel theory ($525,000; PI: R. Fletcher, Co-PIs: E. M. Bruna, R. D. Holt, and B. Reichert)  
+
+<!-- \begin{etaremune} -->
+<!-- \item	UF Informatics Institute SEED Funds: “Cross-National Patterns of Productivity & Collaboration by Latin American Scientists” ($20,000, PI: E. M. Bruna, Co-PIs: Stephen Perz, Chris McCarty). -->
+
+<!-- \item	Mindlin Foundation. “Who are the Gatekeepers of Discovery? A crowdsourced project to ID & map the editors of academic journals” ($3633, 2017-2018). -->
+
+<!-- \item	National Geographic Global Exploration Fund. “Experimental climate change in the Amazon: How will rising CO2 influence plants, insects, and their interactions?” ($19,970, PI: E. M. Bruna, Co-PIs H. Vasconcelos, F. Mundim, D. Lapola). -->
+
+<!-- \item John Wiley and Sons. “Funds to support the Biotropica Editorial Office” ($199,945; 2014-2019). -->
+
+<!-- \item	UF Center for Latin American Studies Faculty Travel Award ($1500) -->
+
+<!-- \item	UF Center for Latin American Studies Speakers Program. “Herton Escobar: Science Correspondent, Estado de São Paulo Newspaper ($2000, including matching funds provided by the College of Journalism and Communications, the Tropical Conservation and Development Program, and Office of the VP for Research). -->
+
+<!-- \item	UF Center for Latin American Studies Faculty Research Award: “Cross-national patterns of productivity and collaboration by Latin American ecologists” ($5450, 2012-2013). -->
+
+<!-- \item	National Science Foundation: “Doctoral Dissertation Enhancement Proposal: International: Carbon sequestration and tree biodiversity in Amazonian floodplain forests”.  ($11,000; OISE-0929183 to E. Bruna prepared by and for doctoral student Christine Lucas, 2010-2012). -->
+
+<!-- \item	David and Lucile Packard Foundation. “Nitrogen dynamics in Brazil’s Cerrado” ($142,198, Grant 2008-32691 to E. Bruna and co-PIs M. Mack and H. Vasconcelos, 2009-2011). -->
+
+<!-- \item	National Science Foundation. “IGERT in Spatial Ecology & Evolution: Quantitative Training in Biology, Statistics, & Mathematics”. ($2,958,113; PI: B. Bolker; Co-PI’s: E. Bruna, C. Osenberg, M. Martcheva, & M. Christman, 2008-2013). -->
+
+<!-- \item	UF International Center. “International Speakers Program: Dr. Claudio Padua, 2008 UF Distinguished Alumnus” ($1500, with $3500 in matching funds from Wildlife Ecology and Conservation, Latin American Studies, the Tropical Conservation and Development Program, and Institute for Agricultural and Life Sciences).   -->
+
+<!-- \item	US Department of Education Fund for the Improvement of Postsecondary Education (FIPSE). “Energy, environment, and sustainable development: the central role of the United States and Brazil” ($202,329; PI: J. Kahn, Washington & Lee University; E. Bruna is UF Project Director; 2006-2010)  -->
+
+<!-- \item	National Science Foundation Collaborative Grant.  “Mechanisms influencing seedling recruitment and establishment in a fragmented Amazonian landscape” DEB-0614149 to E. Bruna ($230,888) and DEB-0614339 to M. Uriarte, Columbia Univ. ($251,831; 2006-10). -->
+
+<!-- \item	National Science Foundation Minority Career Advancement Award. “Linking population and ecosystem ecology: how does nitrogen deposition influence plant demography in tropical savannas?”  DEB-0542287 ($174,499; 2006-08). -->
+
+<!-- \item	Joseph Jones Ecological Research Center. “Productivity and Biodiversity Patterns: Control in a SE Coastal Plain Landscape (Support for the graduate studies of Gwen Iacona)”. ($19,860; 2005-2007).   -->
+
+<!-- \item	National Science Foundation Collaborative Grant. “Elucidating mechanisms of coexistence in a community of ant-plant mutualists”.  DEB-0453631 to E. Bruna ($245,096) & DEB-0452720 to B. Inouye, FSU ($260,000; 2005-09).  -->
+
+<!-- \item	National Science Foundation Grant OISE-0437369.  “U.S.-Brazil Collaborative Research: Seed predation and herbivory in Neotropical savannas: are there demographic consequences for plants?” ($25,012; 2005-2008). -->
+
+<!-- \itemConselho Nacional de Desenvolvimento Científico e Tecnológico, Brazil. “Top-down effects on the structure of Cerrado plant communities” (R$ 22,875.74, Co-PI, 2005-2007) -->
+
+<!-- \item	Fundação de Amparo a Pesquisa do Estado de Minas Gerais, Brazil. “Diversity and conservation of invertebrates in the ‘Triângulo Mineiro’: a case study using ants as bioindicators” (R$12,924.13; Senior Collaborator, 2005-2007) -->
+
+<!-- \item	Fundação de Amparo a Pesquisa do Estado de Minas Gerais, Brazil (Fapemig). “Effect of herbivory by leaf-cutter ants on Cerrado vegetation” (R$25,229.74, Co-PI, 2004-2006) -->
+
+<!-- \item	School for Natural Resources and the Environment New Faculty Support Program. “Seed predation and herbivory in Neotropical savannas: are there demographic consequences for plants?” ($5,000; 2004) -->
+
+<!-- \item Alfred P. Sloan Foundation.  “Increasing the number of minority Ph.D.’s studying Ecology at UF.” ($32,440 and four-year Teaching Assistantships from the College of Agricultural and Life Sciences; 2004).   -->
+
+<!-- \item	National Science Foundation Research Starter Grant DEB-0309819.  “The effect of forest fragmentation on ant-plant mutualisms.” $50,585; 2003-2005). -->
+
+<!-- \item	USAID Subcontract from IIEB.  “Sustainable Communities and Landscapes: A proposed 	program to sustain natural ecosystems and enhance local livelihoods in Brazil’s Amazon and Atlantic Forest regions” ($199,145; 10/01/03-9/30/07; PI: Marianne Schmink; EB and 5 other Co-PIs). -->
+
+<!-- \item	Instituto Internacional de Educação do Brasil-SUNY International Development Group.  “Training of young scientists in Amazonia: A new internship program at the Biological Dynamics of Forest Fragments Project.” (R$21,000; co-PI Patricia Delamônica, 2001). -->
+
+<!-- \item	National Science Foundation Minority Postdoctoral Research Fellowship DBI-0109226. “The effect of forest fragmentation on ant-plant mutualisms” ($190,200; 2001). -->
+
+<!-- \item	NSF Dissertation Improvement Grant INT 98-06351. “Effect of habitat fragmentation on the growth, reproduction, and population dynamics of an Amazonian understory herb” ($17,600; 1998-2000). -->
+
+<!-- \item	Grants for Graduate Research: Smithsonian Institution, Manomet Observatory Kathleen S. Anderson Award, Wilson Ornithological Society Paul A. Stewart Award, and UC Davis (M.E. Mathias Award, Graduate Studies Research Grant, Jastro-Shields Research Award, and Center for Population Biology Summer Research Grant (Total: $11860; 1996-1997). -->
+
+<!-- \item	Grants for Undergraduate Research: Explorer’s Club Grant, UCSD Undergraduate Scholastic Research Grant (Total: $1955; 1994-1995). -->
+
+<!-- \end{etaremune} -->
+
+### GRANT PROPOSALS UNDER REVIEW or IN PREPARATION
+
+
+
+### PEER-REVIEWED PUBLICATIONS AND BOOK CHAPTERS (N = 95)
+
+*Note: I do not co-author papers from my students’ theses unless I have made contributions substantially beyond the mentoring, fundraising, and editing I consider my fundamental responsibility as their advisor. Moreover, I encourage lab members to engage in side projects, which often result in publications on which I am not a co-author. A list of my lab members’ publications on which I am not a coauthor is below.* 
+
+
+Peer=rev
+```{r child = 'pubs_section.Rmd'}
+```
+
+<!-- 1. Bruna, E. M, R. L. Chazdon, T. M. Errington, and B. A. Nosek. In press. A Proposal to Advance Theory and Promote Collaboration in Tropical Biology by Supporting Replications. _Biotropica._ Preprint at: https://osf.io/dbpsz -->
+
+<!-- 2. Barbosa Silva,L. V., H. L. Vasconcelos, M. C. Mack, A. de Siqueira Ferreira, and E. M. Bruna. In press. Effects of experimental nitrogen enrichment on soil properties and litter decomposition in a Neotropical savanna. _Austral Ecology_ [Ph. D. Thesis Chapter]. -->
+
+<!-- 3. Costa, A. N.  A. Bartimachi, H. L Vasconcelos, E. M Bruna & EHM Vieira-Neto. 2020. Annual litter production in a Brazilian Cerrado woodland savanna. _Southern Forests: a Journal of Forest Science_ 82(1): 65-69. -->
+
+<!-- 4. Fournier, A., F. Stevens, M. Boone, and E. M. Bruna. 2020. refsplitr: Author name disambiguation, author georeferencing, and mapping of coauthorship networks with Web of Science data. _Journal of Open Source Software_. 5(45): 2028. -->
+
+<!-- 5. Fletcher, Jr., R. J., J. A. Sefair, C. Wang, C Poli, E. M. Bruna, T. Smith, R. D. Holt, M. Barfield, A. J. Marx, M. A. Acevedo. In press. Toward a unified framework for connectivity that disentangles movement and mortality in space and time. _Ecology Letters_ 22 (10): 1680-1689. -->
+
+<!-- 6. Brooks, M., M. R. Darrigo, P. Rubim, M. Uriarte, E. M. Bruna, B. Bolker. 2019. Modeling patterns in annual reproductive rates. Ecology 100 (7): e02706 [Ph.D. Thesis Chapter]. -->
+
+<!-- 7. Costa, A. N., H. L. Vasconcelos, E. H. M. Vieira-Neto, and E. M. Bruna. 2019. Adaptive foraging of leaf-cutter ants to spatiotemporal changes in resource availability in Neotropical savannas. Ecological Entomology 44(2):227-238 [Ph.D. Thesis Chapter]. -->
+
+<!-- 8. Clare Aslan, Noelle G Beckman, Haldre S Rogers, Judie Bronstein, Damaris Zurell, Florian Hartig, Katriona Shea, Liba Pejchar, Mike Neubert, John Poulsen, Janneke HilleRisLambers, Maria Miriti, Bette Loiselle, Edu Effiom, Jenny Zambrano, Geno Schupp, Gesine Pufal, Jeremy Johnson, James M Bullock, Jedediah Brodie, Emilio Bruna, Robert Stephen Cantrell, Robin Decker, Evan Fricke, Katie Gurski, Alan Hastings, Oleg Kogan, Onja Razafindratsima, Manette Sandor, Sebastian Schreiber, Rebecca Snell, Christopher Strickland, Ying Zhou. 2019. Employing plant functional groups to advance seed dispersal ecology and conservation. AoB Plants 11(2): plz006 -->
+
+<!-- 9. Costa, A. N., E. M. Bruna, and H. L. Vasconcelos. 2018. The relative influence of an environmental gradient and an ecosystem engineer on seedling communities in a Neotropical savanna. PeerJ 6:e5612 [Ph.D. Thesis Chapter]. -->
+
+<!-- 10. Bruna, Emilio M. 2018. Editorial board members are a non-random sample of ecological experts. Nature Ecology and Evolution 2(2):202 [technical comment on a published article]. -->
+
+<!-- 9.	Espin, J., S. Palmas-Perez, F. Carrasco-Rueda, K. Riemer, J. Ungvari-Martin, P. Allen, N. Berkebile, J. P. Gomez, K. Hecht, K. Kastner-Wilcox, M. Nunez-Regueiro, C. Prince, C. Rios, E. Ross, B. Sangha, T. Tyler, M. Villegas-Bilbao, T. Cataldo, & E. M. Bruna. 2017. A persistent lack of geographic diversity on editorial boards in Biology. Plos Biology. 15(12): e2002760 -->
+
+<!-- 10.	Darosci, A. A. B., E. M. Bruna, J. C. Motta-Junior, C. da Silva Ferreira, J. G. Blake & C. B. Rodrigues Munhoz. 2017. Seasonality and the structure of plant-frugivore networks in Neotropical savanna woodlands. Acta Oecologica 84:15-22. -->
+
+<!-- 11.	Rocha-Ortega, M., A. Bartimachi, J. Neves, E.M. Bruna, H. L. Vasconcelos. 2017. Seed removal patterns of pioneer trees in an agricultural landscape. 2017. Plant  Ecology 218 (6): 737-748. -->
+
+<!-- 12.	Brudvig, L. A., S. J. Leroux, C. H. Albert, E. M. Bruna, K. F. Davies, R. M. Ewers, D. J. Levey, R. Pardini, and J. Resasco. 2017. Evaluating conceptual models of landscape change. Ecography 40(1): 74-84. -->
+
+<!-- 13.	Resasco, J. E. M. Bruna, N. M. Haddad, C. Banks-Leite, & C.R. Margules. 2017. The contribution of theory and experiments to conservation in fragmented landscapes. Ecography 40(1): 109-118. -->
+
+<!-- 14.	Costa, A. N, H. L. Vasconcelos, and E. M. Bruna. 2017. Biotic-drivers of plant early-recruitment success: selective herbivory by leaf-cutter ants as an ecological filter in Neotropical savannas. Journal of Ecology. 105(1): 132-141. -->
+
+<!-- 15.	Mundim, F. M., H. T. Alborn, E. H.M. Vieira-Neto & E. M. Bruna. 2017. A whole-plant perspective reveals unexpected impacts of above and belowground herbivores on plant growth and defense. Ecology 105(1): 132-141. -->
+
+<!-- 16.	Pitman, N. C. A., J. Widmer, E. M. Bruna, C. N. Jenkins, G. Stocks, L. Seales, F. Paniagua, and E. Maehr. 2017. El sorprendente liderazgo del Ecuador en la producción científica de la región andino-amazónica, pp. 27-30 in D. Romo et al. (eds.), Los Secretos del Yasuní: Avances en investigación en la Estación de Biodiversidad Tiputini, Universidad San Francisco de Quito, Quito. -->
+
+<!-- 17.	Carvalho, K. S., M. A. Ferraz Carneiro, I. Cardoso Nascimento, A. Kumar Saha, E. M. Bruna. 2016. Lower ant diversity on earth mounds in a semi-arid Brazilian ecosystem: natural or a sign of degradation?  Sociobiology 63(4): 1022-1030. -->
+
+<!-- 18.	Sobrinho, M. S., M. Tabarelli, I. C. Machado, J. C. Sfair, E. M. Bruna, and A. V. Lopes. 2016. Land use, fallow period and the recovery of a Caatinga forest. Biotropica, 48: 586–597. -->
+
+<!-- 19.	Mundim, F. M. & E. M. Bruna. 2016. Climate change and plant-herbivore interactions: a meta-analysis of experimental studies. The American Naturalist. 88(S1): S74-S89. [2016 UF-WEC “High Impact Publication”]. -->
+
+<!-- 20.	Vieira-Neto, E. H. M., H. L. Vasconcelos, and E. M. Bruna. 2016. Roads increase population growth rates of a native leaf-cutter ant in Neotropical savannahs. Journal of Applied Ecology 53(4): 983-992. -->
+
+<!-- 21.	Hoeksema, J. D. and E. M. Bruna. 2015. Context-dependent outcomes of mutualistic interactions. Pages 181-202 in Mutualism, J. L. Bronstein (ed.). Oxford University Press. -->
+
+<!-- 22.	Bruna E.M., T.J. Izzo, B. D. Inouye, and H. L. Vasconcelos. 2014. Effect of mutualist partner identity on plant demography. Ecology 95:3237–3243 [Cover Article]. -->
+
+<!-- 23.	Smith, M. J., C. Weinberger, E. M. Bruna, and S. Allesina. 2014. The scientific impact of nations: journal placement and citation performance. PLoS ONE 9(10): e109195. -->
+
+<!-- 24.	Cho, A. H., S. A. Johnson, C. E. Schuman, J. M. Adler, O. Gonzalez, S. J. Graves, J. R. Huebner, D. B. Marchant, S. W. Rifai, I Skinner, and E. M. Bruna.. 2014. Women are underrepresented on editorial boards in environmental biology and natural resource managment. PeerJ: 2:e542 [Named to the 2015 PeerJ Picks Collection (20 articles of the 471 published in 2014)]. -->
+
+<!-- 25.	Braunger Vasconcelos, P., G. Monteiro de Araújo, and E. M. Bruna. 2014. The role of roadsides in conserving Cerrado plant diversity. Biodiversity & Conservation 23:3035-3050. -->
+
+<!-- 26.	Girão, L. C., A. V. Lopes, M. Tabarelli, and E. M. Bruna. 2014. Mudanças em atributos reprodutivos de árvores reduzem a diversidade funcional em uma paisagem fragmentada de floresta Atlântica pp. 145-174 in Serra Grande: Uma Floresta de ideas.  M. Tabarelli, A. V. Neto, I. R. Leal, and A. V. Lopes (Eds.).  Editora Universitároa da UFPE. Recife. [translation of Girão et al. 2007, PLoS ONE]. -->
+
+<!-- 27.	Araújo, Glein M., A. F. Amaral, E. M. Bruna, and H. L. Vasconcelos. 2013. Fire drives the reproductive responses of herbaceous plants in a Neotropical swamp. Plant Ecology 214(12): 1479-1484. -->
+
+<!-- 28.	Côrtes, M., M. Uriarte, M. Lemes, R. Gribel, W. J. Kress, P. Smouse, E. M. Bruna. 2013. Low plant density enhances gene flow in the Amazonian understory herb Heliconia acuminata. Molecular Ecology 22: 5716-5729. -->
+
+<!-- 29.	Jurinitz, C. F., E. M. Bruna, and A. A. Oliveira. 2013. Synergistic effects of canopy openness, litter depth and ontogeny on seedling performance in forest fragments. Biotropica 45(6): 728-736. -->
+
+<!-- 30.	Lucas, C. M.  E. M. Bruna, and C. M. Nunes-Nascimento.  2012. Seedling co-tolerance of multiple stressors in a disturbed tropical floodplain forest. Ecosphere 4(1): art3. -->
+
+<!-- 31.	Vasconcelos, H. L. and E. M. Bruna.  2012. Arthropod responses to the experimental fragmentation of an Amazonian forest. Zoologia 29(6): 515-530 [Invited review paper]. -->
+
+<!-- 32.	Passmore, H. A., E. M. Bruna, S. Heredia, and H. L. Vasconcelos.  2012. Mutualistic networks in a fragmented Amazonian landscape. PLoS ONE  7(8): e40803 -->
+
+<!-- 33.	Iacona, G. D., L. K. Kirkman, and E. M. Bruna.  2012. Experimental test for facilitation of seedling recruitment by the dominant bunchgrass in a fire-maintained savanna. PLoS ONE 7(7): e39108 -->
+
+<!-- 34.	Mundim, F. M., E. M. Bruna, E. H. M. Vieira-Neto, and H. L. Vasconcelos. 2012. Attack frequency and the tolerance to herbivory of Neotropical savanna trees. Oecologia 168: 405-414. -->
+
+<!-- 35.	Copeland, S. M. E. M. Bruna, L. V. Barbosa, M. C. Mack, and H. L. Vasconcelos.  2012. Effects of experimentally elevated precipitation and nitrogen on soil fertility and plant growth in a Neotropical savanna.  Ecosphere 3(4):31. -->
+
+<!-- 36.	Palumbo, M. J., S. A. Johnson, F. M. Mundim, A. C. Wolf, S. Arunachalam, O. Gonzalez, A. Lau, J. L. Ulrich, A. Washuta, E. M. Bruna. 2012. Harnessing smartphones for ecological education, research, and outreach.  Bulletin of the Ecological Society of America 93(4): 390-393. -->
+
+<!-- 37.	Bruna, E. M. and A. Segalin de Andrade.  2011.  Phenotypic plasticity in plant responses to edge effects: experimental test with an Amazonian understory herb. American Journal of Botany 98(10):1727-1734. -->
+
+<!-- 38.	Bruna, E. M., T. Izzo, B. Inouye, M. Uriarte, & H. L. Vasconcelos.  2011. Assymetric dispersal capability of Amazonian plant-ant queens.  PLoS ONE 6(8): e22937. -->
+
+<!-- 39.	Uriarte, M. Anciães, M. T.B. da Silva, P. Rubim, E. Johnson, and E. M. Bruna.  2011. Disentangling the drivers of reduced long-distance seed dispersal by birds in an experimentally fragmented  landscape.  Ecology 92(4): 924-93. [2012 Outstanding Paper in Landscape Ecology, Int. Assoc. for Landscape Ecology - US Chapter] -->
+
+<!-- 40.	Ferreira, A.V., E. M. Bruna, and H. L. Vasconcelos. 2011. Seed predators limit plant recruitment in Neotropical savannas. Oikos 120: 1013-1022. -->
+
+<!-- 41.	W. F. Laurance, J. L. C. Camargo, R. C. C. Luizão, S. G. Laurance, S. L. Pimm,  E. M. Bruna, P. C. Stouffer, G. B. Williamson, J. Benitez-Malvido, H. Vasconcelos, K. Van Houtan, C. E. Zartman, S. A. Boyle, R. Didham, A. Andrade, and T. E. Lovejoy.  2011. The fate of Amazonian forest fragments:  a 32-Year investigation.  Biological Conservation 144(1) 56-67. [Highlighted as “Exceptional” by the Faculty of 1000] -->
+
+<!-- 42.	Pitman, N. C. A., J. Widmer, C. N. Jenkins, G. Stocks, L. Seales, F. Paniagua, & E. M. Bruna.  2011. Volume and geographical distribution of ecological research in the Andes and the Amazon, 1995-2008. Tropical Conservation Science 4(1): 64-81. -->
+
+<!-- 43.	Gagnon, P. R., E. M. Bruna, P. Rubim, M. R. Darrigo, R. C. Littlel, M. Uriarte, and W. J. Kress. 2011.  The growth of an understory herb is chronically reduced in Amazonian forest fragments.  Biological Conservation 144: 830-835. -->
+
+<!-- 44.	Bruna, E. M.  J. F. Guimarães, C. T. Lopes, R. Pacheco, A. C. Lemos Gomes, S. C. S. Belentani, K. G. Facure, and H. L. Vasconcelos.  2010. Mammalia, Estação Ecológica do Panga, a Cerrado protected area in Minas Gerais state, Brazil.  CheckList: A Journal of Species Lists and Distribution 6(4): 668-675. -->
+
+<!-- 45.	Quitete Portela, R. de Cássia, E. M. Bruna, and F. A. Maës dos Santos. 2010. Are protected areas really protecting populations? A test with an Atlantic rain forest palm. Tropical Conservation Science. 3(4): 361-372 -->
+
+<!-- 46.	Nogueira Ribeiro, M. B., E. M. Bruna, W. Mantovani. 2010. Influence of post-clearing treatment on the recovery of herbaceous plant communities in Amazonian secondary forests. Restoration Ecology 18(S1):50-58 -->
+
+<!-- 47.	Quitete Portela, R. de Cássia, E. M. Bruna, and F. A. Maës dos Santos.  2010. Population growth rates and perturbation analysis of three palm species in Atlantic Rain Forest fragments: a landscape approach.  Biodiversity and Conservation 19: 2389-2403. -->
+
+<!-- 48.	Uriarte, M., E. M. Bruna, P. Rubim, M. Anciaes, and I. Jonckeeere. 2010. Effects of forest fragmentation on seedling recruitment of an understory herb: assessing seed vs. safe-site limitation. Ecology 91(5):1317-1328. -->
+
+<!-- 49.	Iacona, G. D., L. K. Kirkman, and E. M. Bruna.  2010. Effects of resource availability on patterns of ground cover seedling recruitment in a fire maintained savanna. Oecologia 163: 171-180. -->
+
+<!-- 50.	Fiske, I. and E. M. Bruna.  2010. Alternative spatial sampling in studies of plant demography: consequences for estimates of population growth rate.  Plant Ecology 207(2) 213-225. -->
+
+<!-- 51.	Fortini, L. B., E. M. Bruna, D. J. Zarin, S. S. Vasconscelos, I. S. Miranda. 2010. Altered resource availability and the population dynamics of secondary forest tree species in the Eastern Amazon. Oecologia 162(4): 923-934. -->
+
+<!-- 52.	Izzo, T. J., E. M. Bruna, H. L. Vasconcelos, and B. D. Inouye.  2009. Cooperative colony founding alters the likelihood of interspecific competition between Amazonian plant-ants.  Insectes Sociaux 56:341–345. -->
+
+<!-- 53.	de Cardoso, E. M. I. Cruzeiro Moreno, E. M. Bruna & H. L. Vasconcelos.  2009.  Vegetation dynamics in the Cerrado: 18 years of ecological succession at Estação Ecológica do Panga (Uberlândia, MG). Caminhos de Geografia 10(32) 254-268. -->
+
+<!-- 54.	Vasconcelos, H. L. R. Pacheco, R. C. Silva, P. B. Vasconcelos, C. T. Lopes, A. N. Costa & E. M. Bruna.  2009. Dynamics of the leaf-litter arthropod fauna following fire in a Neotropical woodland savanna.  PLoS ONE 4(11): e7762. -->
+
+<!-- 55.	Dáttilo, W.F. C., T. J. Izzo, B. D.Inouye, H. L. Vasconcelos & E. M. Bruna. 2009. Volatile recognition by Pheidole minutula (Myrmicinae), an Amazonian ant-plant specialist. Biotropica 41(5): 642-646. -->
+
+<!-- 56.	Kainer, K. A. M. DiGiano, A. Duchelle, L. H. O. Wadt, E. M. Bruna, and J. L. Dain.  2009.  Partnering for greater success: Local stakeholders and research in tropical biological and conservation. Biotropica 41(5): 555–562. -->
+
+<!-- 57.	Côrtes, M., V. Gowda, W. J. Kress, E. M. Bruna, & M. Uriarte.  2009. Characterization of 10 microsatellite markers for the understory Amazonian herb Heliconia acuminata.  Molecular Ecology Resources 9(4): 1261-1264. -->
+
+<!-- 58.	Callis, K. L., L. R. Christ, J. Resasco, D. W. Armitage, J. D. Ash, T. T. Caughlin, S. F. Clemmensen, S. M. Copeland, T. J. Fullman, R. L. Lynch, C. Olson, R. A. Pruner, E. H. M. Vieira-Neto, R. West-Singh, and E. M. Bruna.  2009.  Improving Wikipedia: educational opportunity and professional responsibility. Trends in Ecology and Evolution 24(4): 177-179. -->
+
+<!-- 59.	Bruna, E. M., I. J. Fiske and M. Trager.  2009.  Effect of habitat fragmentation on plant populations: is what we know demographically irrelevant?  Journal of Vegetation Science 20: 569-576. -->
+
+<!-- 60.	Fiske, I., E. M. Bruna, and B. M. Bolker.  2008. Effect of sample size on estimates of population growth rates calculated with matrix models.  PLoS ONE 3(8): e3080. -->
+
+<!-- 61.	Costa, A. N., H. L. Vasconcelos, E. H. M. Vieira-Neto, and E. M. Bruna.  2008.  Do herbivores exert top-down effects in Neotropical savannas? Estimates of biomass consumption by leaf-cutter ants (Atta spp.) in a Brazilian Cerrado site. Journal of Vegetation Science 19: 849-854. -->
+
+<!-- 62.	Bruna, E. M., M. R., Darrigo, A. M. Furuya Pacheco, and H. L. Vasconcelos.  2008. The defensive responses of ant mutualists to plant volatiles are species-specific.  Biological Journal of the Linnean Society 94:241-249. -->
+
+<!-- 63.	Stocks, G., L. Seales, F. Paniagua, E. Maehr, and E. M. Bruna.  2008.  The geographical and institutional distribution of ecological research in the tropics.  Biotropica 40(4): 397-404. -->
+
+<!-- 64.	Morris, W. F., C. A. Pfister, S. Tuljapurkar, C. V. Haridas, C. Boggs, M. S. Boyce, E. M. Bruna, D. R. Church, T. Coulson, D. F. Doak,, S. Forsyth, J-M. Gaillard, C. C. Horvitz, S. Kalisz, B. E. Kendall, T. M. Knight, C. T. Lee, E. S. Menges.  2008.  Longevity can buffer plant and animal populations against changing climatic variability.  Ecology 89(1): 19-25. -->
+
+<!-- 65.	Vasconcelos, H. L., A. N. Costa, E. H. M. Vieira-Neto, and E. M. Bruna.  2008.  Efeitos da herbivoria por formigas  do gênero Atta Fabricius, 1804 (Hymenoptera: Formicidae) sobre a vegetação do Cerrado. Pp. 301-311 In: Insetos Sociais: da biologia a aplicação. Vilela, E.F.; Santos, I.A.; Schoereder, J.H.; Lino Neto, J.; Campos, L.A.O. & Serrão, J.E. (Eds.).  Editora da Univ. Federal de Viçosa. Viçosa, MG. -->
+
+<!-- 66.	Girão, L. C., A. V. Lopes, M. Tabarelli, and E. M. Bruna. 2007. Changes in tree reproductive traits reduce functional diversity in a fragmented Atlantic Forest landscape.  PLoS ONE  9:e908. -->
+
+<!-- 67.	De Athayde, Simone Ferreira, G. M. da Silva, J. Kaiabi, M. Kaiabi, H. R. De Souza, E. M. Bruna, and K. Ono.  2006.  Participatory management of “Arumã” (Ischnosiphon gracilis,Marantaceae) amongst the Kaiabi people in the Brazilian Amazon.  The Journal of Ethnobiology 26(1): 36-60 [Cover article]. -->
+
+<!-- 68.	Trager, M. and E. M. Bruna.  2006.  Effects of plant age, experimental nutrient addition, and ant occupancy on herbivory in a Neotropical myrmecophyte.  Journal of Ecology 94: 1156-1163. -->
+
+<!-- 69.	Vasconcelos, H. L. E. H. M. Vieira-Neto, F. M. Mundim, and E. M. Bruna.  2006.  Roads alter the colonization dynamics of a keystone herbivore in Neotropical savannas.  Biotropica 38(5):661-665. [Recipient of the Julie S. Denslow Prize from the Association for Tropical Biology and Conservation] -->
+
+<!-- 70.	Boyce, M. S. C. V. Haridas, C. Lee, and the NCEAS Stochastic Demography Working Group (C. L. Boggs, E, M. Bruna, T. Coulson, D. Doak, J. M. Drake, J-M. Gaillard, C. C. Horvitz, S. Kalisz, B. E. Kendall, T. Knight, E. S. Menges, W. F. Morris, C. A. Pfister, S. D. Tuljapurkar).  2006.  Demography in an increasingly variable world.  Trends in Ecology and Evolution 21(3): 141-148. -->
+
+<!-- 71.	Kainer, K. A., M. Schmink, J. R. Stepp, H. Covert, E. M. Bruna, J. L. Dain, S. Espinosa, and S. Humphries.  2006.  A framework for graduate education for tropical conservation and development.  Conservation Biology 20(1): 3-13. -->
+
+<!-- 72.	Bruna, E. M., and M. B. Nogueria Ribeiro.  2005.  The compensatory responses of an understory herb to experimental damage are habitat-dependent.  American Journal of Botany 92(12): 2101-2106. -->
+
+<!-- 73.	Doak, D. F.  W. F. Morris, C. A. Pfister, B. Kendall, and E. M. Bruna.  2005.  Correctly estimating how environmental stochasticity influences fitness and population growth. American Naturalist 166(1): E14-25. [Highlighted as a “Must Read” by the Faculty of 1000] -->
+
+<!-- 74.	Bruna, E. M. and M. K. Oli.  2005.  Demographic consequences of habitat fragmentation for an Amazonian understory plant: analysis of life-table response experiments.  Ecology 86(7): 1816-1824. -->
+
+<!-- 75.	Lapola, D. M., E. M. Bruna, C. G. de Willink, and H. L. Vasconcelos.  2005.  Ant-tended hemiptera in Amazonian myrmecophytes:  patterns of abundance and implications for mutualism function.  Sociobiology 46(2): 433-442. -->
+
+<!-- 76.	Bruna, E. M., H. L. Vasconcelos, and S. Heredia.  2005.  The effect of habitat fragmentation on communities of mutualists: a test with Amazonian ants and their host plants. Biological Conservation 124(2005): 209-216. -->
+
+<!-- 77.	Bruna, E. M. and M. B. Nogueira-Ribeiro. 2005.  Regeneration and population structure of Heliconia acuminata in Amazonian secondary forests with contrasting land-use histories.  Journal of Tropical Ecology 21:127-131. -->
+
+<!-- 78.	Bruna E. M. & W. J. Kress.  2005.  Forest fragments and plant reproduction in Amazonian Brazil.  Pp. 141-146 in G. A. Krupnick & W. J. Kress, eds. Plant conservation: a natural history approach.  U. of Chicago Press. -->
+
+<!-- 79.	Bruna, E. M., W. J. Kress, F. Marques, and O. F. da Silva.  2004.  Heliconia acuminata reproductive success is independent of local floral density.  Acta Amazonica 34(3): 467-471 [Cover article]. -->
+
+<!-- 80.	Lapola, D. M., E. M Bruna, and H. L. Vasconcelos.  2004.  Amizade tênue: relações mutualísticas entre plantas e formigas na Amazônia.  Ciência Hoje 34(204): 28-33. -->
+
+<!-- 81.	Bruna, E. M., D. M. Lapola, and H. L. Vasconcelos.  2004.  Interspecific variation in defensive responses of obligate ant-plant inhabitants: are there consequences for host plants?  Oecologia 238:558-565. -->
+
+<!-- 82.	Nakazono, E., E. M. Bruna, and R. C. G. Mesquita.  2004.  Experimental harvesting of Arumã (Ischnosiphon polyphyllus, Marantaceae), a nontimber forest product in the central Amazon.  Forest Ecology and Management 190:219-225. -->
+
+<!-- 83.	Bruna, E. M.  2004.  Biological impacts of deforestation and fragmentation.  Pages 85-90 in The Encyclopaedia of Forest Sciences.  J. Burley, J Evans, and J Youngquist, (eds.).  Elsevier Press, London. -->
+
+<!-- 84.	Lapola, D. M., E. M Bruna, and H. L. Vasconcelos.  2003.  Contrasting induced responses by ants inhabiting Maieta guianensis (Melastomataceae).  Biotropica 35(2):295-300. -->
+
+<!-- 85.	Bruna, E. M.  2003.  Are plant populations in fragmented habitats recruitment limited? Tests with an Amazonian herb.  Ecology, 84(4): 932-947. -->
+
+<!-- 86.	Bruna, E. M. and W. J. Kress.  2002. Habitat fragmentation and the demographic structure of an Amazonian understory herb (Heliconia acuminata).  Conservation Biology, 16(5): 1256-1266. -->
+
+<!-- 87.	Bruna, E. M., O. Nardy, S. Y. Strauss, and S. P. Harrison.  2002.  Experimental assessment of Heliconia acuminata growth in a fragmented Amazonian landscape.  Journal of Ecology, 90(4): 639-649. [Recipient of the John L. Harper Prize from the British Ecological Society]. -->
+
+<!-- 88.	Bruna, E. M.  2002.  Effects of forest fragmentation on Heliconia acuminata seedling recruitment in the central Amazon.  Oecologia, 132:235-243. -->
+
+<!-- 89.	Laurance, W.F., T. E. Lovejoy, H. L. Vasconcelos, E. M. Bruna, R. K. Didham, P. C. Stouffer, C. Gascon, R. O. Bierregaard, S. G. Laurance, and E. Sampaio.  2002.  Ecosystem decay of Amazonian forest fragments: A 22-year investigation.  Conservation Biology, 16(3): 605-618. -->
+
+<!-- 90.	Hoeksema, J. D. and E. M. Bruna. 2000.  Pursuing the big questions about interspecific mutualism: a review of theoretical approaches.  Oecologia, 125: 321-330. -->
+
+<!-- 91.	Bruna, E. M. 1999.  Seeds in rainforest fragments.  Nature, 402:139 -->
+
+<!-- 92.	Harrison, S. and E. Bruna.  1999.  Habitat fragmentation and large-scale conservation: what do we know for sure?  Ecography, 22: 225-232. -->
+
+<!-- 93.	Bruna, E. M., R. N. Fisher, and T. J. Case. 1996.  Morphological and genetic evolution appear decoupled in Pacific skinks (Emoia). Proc. Roy. Soc. Lond.  B, 263:681-688 [Cover article]. -->
+
+<!-- 94.	Bruna, E. M., R. N. Fisher, and T. J. Case. 1996. New evidence of habitat segregation between cryptic species of  Pacific skinks (Emoia cyanura and E. impar). Copeia, 1996: 998-1005. -->
+
+<!-- 95.	Bruna, E. M., R. N. Fisher, and T. J. Case. 1995.  Cryptic species of Pacific skinks (Emoia): further support from Mitochondrial DNA sequence data. Copeia, 1995: 981-983. -->
+
+
+### SOFTWARE (N=1)
+
+1. Fournier, A., F. Stevens, M. Boone, and E. M. Bruna. 2020. refsplitr. author name disambiguation, author georeferencing, and mapping of coauthorship networks with Web of Science data. R package version 1.0.0. https://github.com/ropensci/refsplitr
+
+
+### ESSAYS, EDITORIALS, & OTHER SCHOLARLY COMMUNICATIONS (N=20)
+
+1.	Powers, J. S., E. M. Bruna, A. Campos‐Arceiz, P. D. Sampaio, S. J. DeWalt, L. G. Lohmann, R. A. Zahawi. 2020. Tropical biology and conservation in the time of the COVID‐19 pandemic. Biotropica 52 (3), 399
+
+2.	Johnson-Ulrich, L. and E. Bruna. 2019. Emilio Bruna: Seed germination is lower in fragmented rainforest. Project Biodiversify projectbiodiversify.org/emilio-bruna/
+
+3.	Bruna, E. M. 2019. Biotropica: the next 50 years. Biotropica [Editorial].
+
+4.	K. R. Zamudio, A. Kellner, C. Serejo, M. R. de Britto, C. B. Castro, P. A. Buckup, D. O. Pires, M. Couri, A. Brilhante Kury, I. Azevedo Cardoso, M. L. Monné, J. Pombal Jr., C. Mello Patiu, V. Padula, A. Dias Pimenta, R. Ventura, E.  Hajdu, J. Zanol, E. M. Bruna, J. Fitzpatrick, L. A. Rocha. 2018. Lack of support for Science and Education Fails Brazilian Society – Again. Science. [Letter to the Editor].
+
+5.	Bruna, Emilio M. 2017. Invasive new US visa rules hurt Americans too. Americas Quarterly. http://www.americasquarterly.org/content/academic-collaboration [Invited Essay].
+
+6.	Harms, Kyle, J. Benitez-Malvido, & E. M. Bruna. 2017. 2016 Alwyn Gentry Awards and Luis F. Bacardi Award Recipients. Biotropica [Editorial].
+
+7.	Bruna, E. M. 2016. Biotropica renames its "Outstanding Paper" awards for two pioneering scientists. Biotropica 48(6): 929 [Editorial].
+
+8.	Parker, T. H., Nakagawa, S., Gurevitch, J. and IIEE (Improving Inference in Evolutionary Biology and Ecology) workshop participants. 2016. Promoting transparency in evolutionary biology and ecology. Ecology Letters, 19: 726–728 [Editorial]. 
+
+9.	Whitlock, M. C., J. L. Bronstein, E. M. Bruna, A. M. Ellison, C. W. Fox, M. A. McPeek, A. J. Moore, M. A. F. Noor, M.  D. Rausher, L. H. Rieseberg, M. G. Ritchie, and R. G. Shaw. 2016. A balanced data archiving policy for long-term studies. Trends in Ecology and Evolution, 31(2) 84-85 [Response to article].
+
+10.	E. M. Bruna, M. Peña-Claros, Bryan Finega, and B. A. Kaplin. 2016. A New Data Archiving Policy for Biotropica. Biotropica, 48(2): 139-140. [Editorial].
+
+11.	E. M. Bruna. 2014. Biotropica to become an ‘online-only’ journal in 2015. Biotropica 46(6): 782. [Editorial].
+
+12.	E. M. Bruna. 2014. 2014 Alwyn Gentry Awards, Luis F. Bacardi Award, and ATBC Honorary Fellows. Biotropica 46(6): 779-781. [Editorial].
+
+13.	E. M. Bruna. 2014. A word from the Editor-in-Chief. Biotropica 46(4): 377 [Editorial].
+
+14.	V. Christianini, P. S. Oliveira, E. M. Bruna, H. L. Vasconcelos. 2014. Fauna in decline: Meek shall inherit. Science 354(6201):1129 [Commentary on published article].
+
+15.	Bruna, E. M. 2014 On identifying rising stars in biology. Bioscience. 64(3):169 [Commentary on published article].
+
+16.	Bruna, E. M. 2010. Journals can advance tropical biology and conservation by requiring data archiving.  Biotropica 42(4): 399–401 [Editorial].
+
+17.	Bruna, E. M. 2010.  Announcement: Biotropica Award for Excellence in Tropical Biology and Conservation. Biotropica 42(4): 518–519 [Editorial].
+
+18.	Bruna, E. M. and K. A. Kainer.  2005.  A delicate balance in Amazonia.  Science 307:1044-1045. [Response to published article].
+
+19.	Bruna, E. M.  2003.  "For the Love of Nature".  Science's Next Wave Online Magazine. [Invited essay].
+
+20.	Bruna, E. M. 2002. A biologist’s guide to fragmenting the Amazon (including why it’s a bad idea).  Conservation Biology, 16(5): 1446-1448. [Book review].
+PUBLICATIONS BY LAB MEMBERS (N = 16; see co-authorship philosophy above; lab member underlined).
+
+1.	Costa, A. N. and Vieira-Neto, E. H. M. 2016. Species turnover regulates leaf-cutter ant densities in environmental gradients across the Brazilian Cerrado. Journal of Applied Entomology 140(2016):474-478. 
+
+2.	M. Tabarelli, A. V. Neto, I. R. Leal, and A. V. Lopes (Eds.).  2014. Serra Grande: Uma Floresta de ideas.  Editora Universitária da UFPE. Recife. 672 pp.
+
+3.	Cruz Neto O, Aguiar AV, Twyford AD, Neaves LE, Pennington RT, and Lopes AV. 2014. Genetic and ecological outcomes of Inga vera subsp affinis (Leguminosae) Tree plantations in a fragmented tropical landscape. PLoS ONE 96: e99903.
+
+4.	Lucas CM, Schoengart J, Sheikh P, Wittmann F, Piedade MTF, and McGrath DG. 2014. Effects of land-use and hydroperiod on aboveground biomass and productivity of secondary Amazonian floodplain forests. Forest Ecology and Management 319:116-127. [Ph.D. thesis chapter].
+
+5.	Soares SM, Machado IC, Aguiar AV, and Lopes AV. 2014. Dioecy in the Caatinga, a Brazilian tropical  dry forest: typical reproductive traits of a low frequent sexual system. Plant Systematics and Evolution 300:1299-1311.
+
+6.	Tabarelli M, Aguiar AV, Robeiro MC, and Metzger JP. 2012. A conversão da floresta atlântica em paisagens antrópicas: lições para a conservação da diversidade biológica das florestas tropicais. Interciencia 37:88-92.
+
+7.	Lucas CM, Mekdece F, Nascimento CMN, Holanda A-SS, Braga J, Dias S, Sousa S, Rosa PS, and Suemitsu C. 2012. Effects of short-term and prolonged saturation on seed germination of Amazonian floodplain forest species. Aquatic Botany 99:49-55. [Ph.D. thesis chapter].
+
+8.	Horn, M., S.B. Correa, P. Parolin, B.J.A. Pollux, J.T. Anderson, C. Lucas, P. Widmann, A. Tiju, M. Galetti, and M. Goulding. 2011. Seed dispersal by fishes in tropical and temperate waters: the growing evidence.  Acta Oecologia 37:561-577.
+
+9.	Tabarelli M, Aguiar AV, Ribeiro MC, Metzger JP, and Peres CA. 2010. Prospects for biodiversity conservation in the Atlantic Forest: lessons from aging human-modified landscapes. Biological Conservation 143:2328-2340.
+
+10.	Gagnon, P.R., Passmore, H.A., Platt, W.J., Paine, C.E.T., Myers, J.A. and Harms, K.E. 2010. Does pyrogenicity protect burning plants? Ecology 91: 3481-3486 [Cover Article]. 
+
+11.	Trager, M. D., S. Bhotika, J. A. Hostetler, G. V. Andrade, M. A. Rodriguez-Cabal, C. S. McKeon, C. W. Osenberg, and B. M. Bolker. 2010. Benefits for plants in ant-plant protective mutualisms: A meta-analysis. PLoS ONE 5:e14308.
+
+12.	Parolin P, C. Lucas, M.T.F. Piedade, & F. Wittmann. 2010. Drought responses of flood-tolerant trees in Amazonian Floodplains. 2010.  Annals of Botany 105(1):129-39. [Invited article]
+
+13.	Aguiar AV, and Tabarelli M. 2010. Edge effects and seedling bank depletion: the role played by the early successional palm Attalea oleifera (Arecaceae) in the Atlantic Forest. Biotropica 42:158-166.
+
+14.	Duchelle, A.E., K. Biedenweg, C. Lucas, J. Radachowsky, D. Wojcik, M. Londres, D. Alvira, W. Bartels, A. Virapongse, and K.A. Kainer. 2009. Graduate students and knowledge exchange with local stakeholders: Possibilities and preparation.  Biotropica 41(5): 578-585.
+
+15.	Lucas, C.M. 2008. Within flood season variation in fruit consumption and seed dispersal by two characin fishes of the Amazon. Biotropica 40(5): 581–589.
+
+16.	Hartter, J., C. Lucas, A. Gaughan, and L.L. Aranda. 2008. Detecting tropical dry forest succession in a shifting cultivation mosaic of the Yucatán Peninsula, Mexico.  Applied Geography 28: 134-149.
+
+
+### PUBLICLY ARCHIVED DATASETS & CODE (N=20)
+
+1.	Costa et al. (2018) Data from: The relative influence of an environmental gradient and an ecosystem engineer on seedling communities in a Neotropical savanna. Dryad Digital Repository https://doi:10.5061/dryad.vf1gq0q 
+
+2.	Emilio M. Bruna. (2018, September 13). embruna/Costa-etal-PeerJ-2018: First release of code used in Costa et al 2018 PeerJ (Version v1.0.0). Peerj. Zenodo. http://doi.org/10.5281/zenodo.1418482 
+
+3.	Espin, J., et al. (2017) Data from: A persistent lack of international representation on editorial boards in environmental biology. Dryad Digital Repository. https://doi.org/10.5061/dryad.mh189
+
+4.	Bruna, E. M. 2017. Code (v1.0) used in “A persistent lack of international representation on editorial boards in environmental biology, Espin et al.”  Zenodo http://doi.org/10.5281/zenodo.1067800
+
+5.	Vieira-Neto EHM, Vasconcelos HL, Bruna EM (2016) Data from: Roads increase population growth rates of a native leaf-cutter ant in Neotropical savannahs. Journal of Applied Ecology https://doi.org/10.5061/dryad.1s4f2
+
+6.	Costa AN, Vasconcelos HL, Bruna EM (2016) Data from: Biotic-drivers of seedling establishment in Neotropical savannas: selective granivory and seedling herbivory by leaf-cutter ants as an ecological filter. Journal of Ecology https://doi.org/10.5061/dryad.1hj56
+
+7.	Mundim FM, Bruna EM (2016) Data from: Is there a temperate bias in our understanding of how climate change will alter plant-herbivore interactions? A meta-analysis of experimental studies. The American Naturalist https://doi.org/10.5061/dryad.dn048
+
+8.	Bruna EM, Izzo TJ, Inouye BD, Vasconcelos HL (2014) Data from: Effect of mutualist partner identity on plant demography. Ecology https://doi.org/10.5061/dryad.5kc45
+
+9.	Bruna E.M. 2014. Code (v1.0) used in "Effect of mutualist partner identity on plant demography. Ecology”. Zenodo: doi:10.5281/zenodo.11650. Available for improvement at https://github.com/embruna/ant-plant-demography. 
+
+10.	Cho AH, Johnson SA, Schuman CE, Adler JM, Gonzalez O, Graves SJ, Huebner JR, Marchant DB, Rifai SW, Skinner I, Bruna EM (2014) Data from: Women are underrepresented on the editorial boards of journals in environmental biology and natural resource management. PeerJ https://doi.org/10.5061/dryad.6jn86.2
+
+11.	Cho et al. 2014. Code used in “Women are underrepresented on the editorial boards of journals in environmental biology and natural resource management. PeerJ”:: https://github.com/embruna/Editorial-Board-Gender 
+
+12.	Corrêa Côrtes M. et al. 2013. Low plant density enhances gene dispersal in the Amazonian understory herb Heliconia acuminata. Molecular Ecology Dryad Digital Repository: doi:10.5061/dryad.b003f
+
+13.	Passmore, H. A et al. 2012. Data from: Resilient networks of ant-plant mutualists in Amazonian forest fragments. PLoS ONE. doi:10.5061/dryad.pf2r 
+
+14.	Copeland, S. M. et al. 2012. Data from: Effects of experimentally elevated precipitation and nitrogen on soil fertility and plant growth in a Neotropical savanna. Ecosphere. Dryad Digital Repository: doi: 10.5061/dryad.dg380p9q
+
+15.	Bruna EM, et al. 2011. Data from: Asymmetric dispersal and colonization success of Amazonian plant-ants queens. PLoS ONE. Dryad Digital Repository. doi:10.5061/dryad.h6t7g
+
+16.	Bruna, E. M. and A. Segalin de Andrade. 2011. Data from: Phenotypic plasticity in plant responses to edge effects: experimental test with an Amazonian understory herb. American Journal of Botany. Dryad Digital Repository: doi:10.5061/dryad.553hc134
+
+17.	Microsatellite sequences from Cortes, MC et al. 2009. Characterization of 10 microsatellite markers for the understorey Amazonian herb Heliconia acuminata. Molecular Ecology Resources. Genbank.
+
+18.	Stocks G. et al. 2008. Data from: The geographical and institutional distribution of ecological research in the tropics. Biotropica. Dryad Digital Repository: doi:10.5061/dryad.9097 
+
+19.	Sequences used in Mitochondrial DNA sequences from Bruna, E. M. et al. 1996.  Morphological and genetic evolution appear decoupled in Pacific skinks (Emoia). Proc. Roy. Soc. Lond. B: Genbank.
+
+20.	Heliconia acuminata Demographic Data. Seed set: http://dx.doi.org/10.6084/m9.figshare.1273926 Leaf Length vs. Area: http://dx.doi.org/10.6084/m9.figshare.92691
+
+
+### MANUSCRIPTS & OTHER PRODUCTS IN REVIEW or REVISION (N=6, available upon request)
+
+1. 	Smith, A. C., L. Merz, J. Borden, C. Gulick, A. R. Kshirsagar, and E. M. Bruna. Article processing charges, the geographic diversity of author communities, and barriers to publication for authors in the Global South. Submitted to Quantitative Science Studies.  Preprint at https://doi.org/10.21222/osf.io/s7cx4 
+
+2.	Mundim, F. M. E. H. M. Vieira-Neto, H. Alborn, & E. M. Bruna. Disentangling the influence of resource variability and simultaneous attacks on whole-plant tolerance to herbivory. Submitted to Journal of Ecology [PhD Thesis Chapter].
+
+3.	da Costa, A. N., A. Bartimachi, E. H. M. Vieira-Neto, H. L. Vasconcelos, and E. M. Bruna. Annual litter production in a Brazilian Cerrado woodland savanna. Submitted to Brazilian Journal of Botany. 
+
+4.	Goring, S., K.S. Whitney, E. M. Bruna, A. L. Jacob, and T. Poisot. Ten Simple Rules to Make Scientific Content More Accessible. Preprint at: DOI: 10.22541/au.150844289.92609826
+
+5.	Tolentino,M., M. Anciães, E. M. Bruna, and M. Uriarte. Local and landscape factors mediate reproductive success of Heliconia acuminata in a fragmented landscape. In revision, Landscape Ecology. 
+
+6.	Corrêa Côrtes, M., M. Uriarte, W. J. Kress, J. B. Illian, and E. M. Bruna. Why are the spatial distribution of individual plants and genotypes decoupled? A framework to assess the contribution of ecological interactions and environmental filtering. In revision, Ecology Letters [Ph.D. Thesis Chapter].
+
+
+
+### MANUSCRIPTS IN PREPARATION (N=10, drafts available upon request). 
+	
+1.	E. S. Parsons and E. M. Bruna. Assessing the magnitude of abiotic edge effects in fragmented landscapes: revisiting the paradigm with data. In preparation for Biological Conservation [MA Thesis chapter].
+
+2.	E. M. Bruna, M. Uriarte, and W. J. Kress. Abundance and demography of the understory herb Heliconia acuminata (Heliconiaceae) in an experimentally fragmented landscape in the Central Amazon (1997-2009). In preparation for Ecology.
+
+3.	E. H. M. Vieira-Neto, F. M. Mundim, and E. M. Bruna. Closed and open demographic models give contrasting patterns of inter-ppopulation dynamics in a long-lived superorganism. In preparation for Ecology.
+
+4.	Bruna, E. M. and W. Hahn.  In preparation. Is Latin American ecology really on the rise? Cross-national patterns of productivity and collaboration by Latin American scientists. In preparation for PLoS Biology.
+
+5.	Rubim, P., D. M. S. Matos, M. Uriarte, and E. M. Bruna. Local density influences the growth of seedlings of an Amazonian understory herb. In preparation for Biotropica [Ph.D. Thesis Chapter].
+
+6.	Loiselle, B. A., E. M. Bruna, R. Buschbacher, and S. Athayde. In prep. How can Brazilian Studies and partnerships with Brazilian institutions shape the perception of tropical conservation and development issues at US universities? Lessons from the University of Florida. Brazilian Studies in the United States: The road ahead. Yale University, FGV, and The Ministry of Education in Brazil.
+
+7.	Rubim, P. R., M. Uriarte, O. Ferreira, and E. M. Bruna. Neighborhood effects and the reproductive effort of a tropical perennial herb. In preparation for Ecology [Ph.D. Thesis Chapter].
+
+8.	Rodrigues, D. R., Y. R. Bovolenta, E. M. Bruna, J. A. Pimenta, and E. Bianchini. Coexistence of understory tree species via architecture differentiation in the Atlantic Forest of southern Brazil. In preparation for Plant Ecology.
+
+9.	Ferreira, A. M. A. P. Faria, H. L. Vasconcelos, E. M. Bruna, A. S. Franco Pinheiro Moreira. Effect of nitrogen deposition on metabolism, biomass increase and species richness in a grass community of the Brazilian Cerrado.  In preparation for Plant & Soil.
+
+10.	Hyde, J. L., Bohlman, S. A., Athayde, S., Bruna, E. M., Valle, D.R. In prep. A lack of open data standards for large infrastructure project hampers social-ecological research in the Brazilian Amazon. In preparation for Environmental Science and Policy. 
+
+
+### DIGITAL COMMUNICATION
+
+1. Over 30 Wikipedia pages edited with students as part of graduate and undergraduate courses in Plant Animal Interactions and Tropical Ecology. Complete at: http://en.wikipedia.org/wiki/User:Embruna 
+
+2. Biotropica.org: The Editor’s Blog. A forum for sharing information about the journal Biotropica, its ongoing initiatives, announcements debates on recent publications, and advice for authors. >80,000 views since launched in August 2013, http://biotropica.org/ 
+
+3. BrunaLab.org / “Between the 23s” (lab web page and blog): In addition to hosting publications, data, and other information on current lab activities, we provide resources for the broader community on topics (e.g., resources for beginners on making figures in R or version control with GitHub).  We also maintain a compendium on smartphone applications for fieldwork, which is responsible for most of the sites 113,000 page views since January 2013. http://brunalab.org/ 
+
+4. “Jean Theodore Descourtilz (1796-1855) and the Ornithologie Bresilienne.” A website created by TCD graduate students in my Tropical Ecology class to provide background information and an analysis of artwork acquired by the Harn Museum of Art on their behalf.  https://descourtilz.wordpress.com/ 
+
+
+### TEACHING EXPERIENCE
+
+__Courses Taught at the University of Florida__
+
+\begingroup 
+\setlength{\leftskip}{.2cm}
+
+Ecology and Conservation of Tropical Wildlife (Undergraduate, 03,05,07,11,12,14,18)  
+Data Collection & Management for Latin American Studies (Graduate, 2019)  
+Plant-Animal Interactions (Graduate, 2004, 2006, 2008, 2010)  
+Fundraising for Tropical Conservation & Development (Graduate, 2013, 2016, 2018, 2020)  
+Scientific Publishing (Graduate, 2014, 2015, 2017, 2018)  
+Ecological Principles for Development & Conservation Professionals (Graduate, 2010, 2011, 2012)  
+Tropical Forest Community Ecology (Graduate, 2000)  
+Design and Methods of Research in Latin American Studies (Graduate, 2008, 2010)  
+Research Methods in Tropical Conservation & Development (Graduate, 2003-2007)  
+Seminar in Wildlife Ecology and Conservation (Graduate, 2003, 2004)  
+Social Media Workshop (Graduate, 2016)
+
+\endgroup 
+
+__Other Teaching Experience__  
+
+\begingroup 
+\setlength{\leftskip}{.2cm}
+
+
+*__Guest Lectures in UF Courses__*  
+Human Footprint on the Landscape (GEO 3352, 2019)  
+Facets of Sustainability (IDS2154, 2011, 2013)  
+Environmental Planning & Design (EES 6051, 2016,2018)  
+The Amazon (LAS6290, 2009, 2011)  
+Design & Methods of Research in Latin American Studies (Graduate, 2019, 2020)  
+Discovering Research & Communicating Science (IDH3931, 2015)  
+Wildlife Techniques (WIS4945C, 2005)  
+Development Theory & Practice (LAS6938, 2010)  
+Wildlife Population Modeling (WIS6466, 2003, 2006, 2008, 2010)  
+Principles of Wildlife Ecology & Conservation (WIS6934, 2008)  
+Luso-Brazilian Civilization (POW3500, 2004)  
+
+*__Courses Taught & Guest lectures at Other Institutions__*  
+Univ. Federal de Uberlândia: Mechanisms of Species Coexistence (Graduate Course, 2006)  
+Univ. Federal de Uberlândia: Data Management & Archiving (Graduate Course, 2012, 2014)  
+Univ. Federal de Uberlândia: Scientific Publishing (Graduate Course, 2011)  
+INPA: Population Ecology (Guest Lecturer 2002, 2003)  
+INPA: Community Ecology (Guest Lecturer 2002)
+
+*__Participation in Field Courses__*  
+OTS 3M Field Course (2001)  
+OTS Amazonian Ecosystems Field Course (2001)  
+Antioch College Semester Abroad in Brazil (1999, 2001)  
+Univ. Federal do Amazonas, Fragmented Landscapes Field Course (2000, 2002)  
+
+\endgroup 
+
+### GRADUATE STUDENTS ADVISED
+```{r GradStudentsA, echo=FALSE,message = FALSE,warning=FALSE}
+# library(flextable)
+# https://cran.r-project.org/web/packages/flextable/vignettes/format.html#borders
+# df <- grad_advised<-read_csv("./grad_advised.csv") %>% filter(role=="advisor") %>% select(-role)
+# table1<-df %>% regulartable() %>% autofit() %>% 
+# width(j=~Degree,width=.3) %>% width(j=~Year,width=.9) %>% width(j=~Instititution,width=.1)
+# table1 <- fontsize(table1, part = "header", size = 11) 
+# table1 <- border_remove(x = table1)
+# table1
+```
+
+
+```{r GradStudents, echo=FALSE,message = FALSE,warning=FALSE}
+
+grad_advised<-read_csv("./grad_advised.csv") %>% filter(role=="advisor") %>% select(-role)
+kbl(grad_advised,digits = 1,
+                  format = "latex",
+                  align="l",
+    col.names = NULL,
+    longtable = T,
+                  row.names = FALSE,
+                  booktabs=T,
+                  linesep = "") %>%
+  kable_styling(bootstrap_options = c("hover"),
+                latex_options = c("scale_down"),
+                full_width = F,
+                font_size = 10,
+                position = "left") %>%
+  sub("\\\\toprule", "", .) %>%
+  sub("\\\\bottomrule", "", .)
+
+```
+
+Students under my supervision have been awarded over $35,000 in grants to support their research and been the recipients of prestigious fellowships and awards to support their studies: 
+
+*	FLAS Fellowship (S. Parsons)
+*	NSF Predoctoral Fellowships (M. Trager, S. Copeland)
+*	UF IGERT Fellowship (C. Lucas)
+*	Inter-American Foundation Grassroots Development Fellowship (C. Lucas)
+*	UF Alumni Fellowship (M. Trager)
+*	Fulbright Fellowship (A. Neto)
+*	Science Without Borders Doctoral Fellowship (E. V. Neto, F. Mundim).
+*	NSF Doctoral Dissertation Enhancement Grant (C. Lucas)
+*	UF-WEC Jennings Scholarship (A. Neto, M. Trager, F. Mundim, G. Iacona) 
+*	UF-CALS Doris Lowe & Earl & Verna Lowe Scholarship (C. Lucas, E. V. Neto). 
+
+Research by my students has also been recognized for its excellence: 
+
+*	Fabiane Mundim: 2016 UF-WEC High-Impact Publication
+*	Ana Cecilia Silva: Honorable Mention, 2015 Charles Wood Thesis Award, UF Latin American Studies
+*	Fabiane Mundim: Honorable Mention, 2012 OTS Outstanding Paper Competition 
+*	Christine Lucas: 2012 Marianne Schmink Award for the University of Florida’s outstanding Dissertation in Tropical Conservation and Development.
+*	Ernane Vieira Neto: 2011 E. Lucy Braun Award (Outstanding poster presented at the Annual Meeting of the Ecological Society of America).
+*	Shannon Moore, a high school student in my lab as part of UF’s Student Science Training Program (SSTP), was awarded the prize for the best oral presentation at the 2010 SSTP Symposium.
+*	Matthew Trager: 2005 Wildlife Grad Student Assoc. Outstanding Research Award (MS Category).
+
+
+### DOCTORAL STUDENT COMMITTEE SERVICE, UNIVERSITY OF FLORIDA
+
+```{r DocCmte, echo=FALSE,message = FALSE,warning=FALSE}
+grad_advised<-read_csv("./grad_advised.csv") %>% filter(role=="doc_cmte") %>% select(-role)
+
+kbl(grad_advised,digits = 1,
+                  format = "latex",
+                  align="l",
+                  col.names = NULL,
+                  row.names = FALSE,
+                  booktabs=T,
+                  longtable = T, 
+                  linesep = "") %>%
+  kable_styling(bootstrap_options = c("hover"),
+                latex_options = c("scale_down"),
+                full_width = F,
+                font_size = 10,
+                position = "left") %>%
+  sub("\\\\toprule", "", .) %>%
+  sub("\\\\bottomrule", "", .)
+
+```
+
+
+
+### MASTER’S STUDENT COMMITTEE SERVICE
+```{r MastersCmte, echo=FALSE,message = FALSE,warning=FALSE}
+
+grad_advised<-read_csv("./grad_advised.csv") %>% filter(role=="masters_cmte") %>% select(-role)
+kbl(grad_advised,digits = 1,
+                  format = "latex",
+                  align="l",
+        longtable = T, 
+    col.names = NULL,
+                  row.names = FALSE,
+                  booktabs=T,
+                  linesep = "") %>%
+  kable_styling(bootstrap_options = c("hover"),
+                latex_options = c("scale_down"),
+                full_width = F,
+                font_size = 10,
+                position = "left") %>%
+  sub("\\\\toprule", "", .) %>%
+  sub("\\\\bottomrule", "", .)
+
+```
+
+
+### MEMBER OF PROPOSAL REVIEW, THESIS REVIEW, OR THESIS DEFENSE COMMITTEE
+```{r external, echo=FALSE,message = FALSE,warning=FALSE}
+
+other<-read_csv("./grad_advised.csv") %>% filter(role=="other") %>% select(-role,-Program)
+kbl(other,digits = 1,
+                  format = "latex",
+                  align="l",
+        longtable = T, 
+    col.names = NULL,
+                  row.names = FALSE,
+                  booktabs=T,
+                  linesep = "") %>%
+  kable_styling(bootstrap_options = c("hover"),
+                latex_options = c("scale_down"),
+                full_width = F,
+                font_size = 10,
+                position = "left") %>%
+  sub("\\\\toprule", "", .) %>%
+  sub("\\\\bottomrule", "", .)
+
+```
+
+
+
+
+### POSTDOCTORAL, SABBATICAL, & POSTGRADUATE SCHOLARS 
+```{r lab_members, echo=FALSE,message = FALSE,warning=FALSE}
+lab_members<-read_csv("./lab_members.csv") 
+lab_members$cat<-as.factor(lab_members$cat)
+lab_members$cat <- ordered(lab_members$cat, levels = c("postdoc","sab" ,"postgrad", "vis_grad","ug","hs"))
+lab_members2<-lab_members %>% 
+  filter(cat=="postdoc"|cat=="sab"|cat=="postgrad") %>% 
+  arrange(order(cat)) %>% 
+  select(-cat) %>% 
+  replace_na(list(Name=" ", Institution=" ", Position=" ", Year=" "))
+
+kbl(lab_members2,digits = 1,
+    format = "latex",
+    align="l",
+    longtable = T, 
+    col.names = NULL,
+    row.names = FALSE,
+    booktabs=T,
+    linesep = "") %>%
+  kable_styling(bootstrap_options = c("hover"),
+                latex_options = c("scale_down"),
+                full_width = F,
+                font_size = 10,
+                position = "left") %>%
+  sub("\\\\toprule", "", .) %>%
+  sub("\\\\bottomrule", "", .)
+      
+```
+
+### UNDERGRADUATE THESIS STUDENTS, HIGH SCHOOL RESEARCHERS, & VISITING GRADUATE STUDENTS  
+```{r lab_members2, echo=FALSE,message = FALSE,warning=FALSE}
+lab_members<-read_csv("./lab_members.csv") 
+lab_members$cat<-as.factor(lab_members$cat)
+lab_members$cat <- ordered(lab_members$cat, levels = c("postdoc","sab" ,"postgrad", "vis_grad","ug","hs"))
+lab_members3<-lab_members %>% 
+  filter(cat=="ug"|cat=="hs"|cat=="vis_grad") %>% 
+  arrange(order(cat)) %>% 
+  select(-cat) %>% 
+  replace_na(list(Name=" ", Institution=" ", Position=" ", Year=" "))
+
+kbl(lab_members3,digits = 1,
+                  format = "latex",
+                  align="l",
+        longtable = T, 
+    col.names = NULL,
+                  row.names = FALSE,
+                  booktabs=T,
+                  linesep = "") %>%
+  kable_styling(bootstrap_options = c("hover"),
+                latex_options = c("scale_down"),
+                full_width = F,
+                font_size = 10,
+                position = "left") %>%
+  sub("\\\\toprule", "", .) %>%
+  sub("\\\\bottomrule", "", .)
+
+```
+
+
+*__Research Interns:__* _2007_: Wesley Dáttilo da Cruz, Univ. Estadual do Norte Fluminense (Brazil), Jefferson José Valsko da Silva, Universidade do Norte Fluminense (Brazil). _2005-2007_: Renata Pacheco do Nacimento and Cauê Thomé Lopes, Univ. Federal de Uberlândia (Brazil). _2005-2006_: Polyanna Custodio Duarte, Univ. Federal de Uberlândia (Brazil). _2006_: Waldete Castro Lourenço, Univ. Federal do Amazonas (Brazil), Elisabete Marques da Costa, Univ. Federal de Pernambuco (Brazil). _2005_: Bruno Turbiani, Universidade Estadual Paulista (Brazil). _2004_: Cristina Escate, Universidade Federal do Amazonas (Brazil), Simone Benedet, Universidade do Vale do Rio do Sinos (Brazil). _2003_: Cris Follman Jurinitz, Univ. Federal do Rio Grande do Sul (Brazil), Denise Cruz, Univ. Federal do Rio de Janeiro (Brazil). _2003-2004_: David M. Lapola, Universidade Estadual Paulista (Brazil). _2002_: Maria Beatriz Nogueira, Universidade de São Paulo (Brazil). _2001-2002_: Sylvia Heredia, Universidad de los Andes (Colombia). _2001_: Obed Garcia, INPA (Brazil), Olavo Nardy, UNESP (Brazil).
+
+
+### SERVICE - UNIVERSITY OF FLORIDA  
+
+\begingroup 
+\setlength{\leftskip}{.2cm}
+Samuel P. Harn Museum of Art Faculty Council (2012-2015)  
+Selection Committee, Edward A. Bouchet Graduate Honor Society (2020-2021)  
+Selection Committee, UF International Educator of the Year Award (2006)  
+Selection Committee, UF Teacher/Scholar of the Year (2015)  
+UF Research Foundation Professorship Selection Committee (2010)  
+Fulbright Fellows Campus Interview Committee  (2019)  
+Catalyst Fellow, UF Innovation Academy Catalyst Challenge (2018)  
+External Advisory Committee, Institute of Museum & Library Services Grant (2015-2018)  
+International Outreach Advisory Council, Graduate School (2014-Present)  
+Internal Advisory Board, Innovation through Institutional Integration (I3) program (2010-2014)  
+Administrative Council, QSE3 IGERT (2008-2014)  
+Peer Teaching Evaluation for Dr. Michelle Mack, UFL Department of Botany (2006)    
+
+\endgroup 
+
+### SERVICE - UF COLLEGE OF AGRICULTURAL AND LIFE SCIENCES  
+\begingroup 
+\setlength{\leftskip}{.2cm}
+
+IFAS International Programs Advisory Team (2020-Present)  
+UF-CALS Outstanding Thesis Selection Committee (2020)  
+York Distinguished Lecture Selection Committee (2015)  
+Search and Screen Committee, CALS Quantitative Sciences Faculty Positions (2013)  
+Coordinating Committee, School for Natural Resources & the Environment (2012)  
+Invited Speaker, College of Agricultural & Life Sciences Teaching Grantsmanship Workshop (2012)  
+Mentorship Committee for Dr. Luke Flory, Dept. of Agronomy (2012)  
+IFAS Faculty Professional Development Advisory Committee (2012-2013)  
+Selection Committee, College of Agricultural & Life Sciences Teaching and Advising Awards (2012)  
+Invited Speaker, College of Agriculture and Life Sciences Teaching Enhancement Symposium (2010)  
+College of Agricultural & Life Sciences Undergraduate Scholarships & Awards Committee (2007-2009)  
+Unifas Focus Group (Teaching Section), College of Agriculture and Life Sciences (2007)  
+Unifas Advisory Committee, College of Agriculture and Life Sciences (2006-2007)  
+Invited Speaker, College of Agriculture and Life Sciences Teaching Enhancement Symposium (2005)  
+Commencement Marshal, College of Agricultural and Life Sciences (2004, 2014,2015, 2018)   
+SNRE Seed Grant and New Faculty Support Grant Programs (2005)  
+
+\endgroup 
+
+### SERVICE - UF DEPARTMENT OF WILDLIFE ECOLOGY & CONSERVATION  
+
+\begingroup 
+\setlength{\leftskip}{.2cm}
+
+Research Committee (2005-2007, 2020-present)  
+Space Committee (2019)  
+Communications Committee (2014-Present)  
+Graduate Program Committee (2005-2012)  
+International Programs Committee (2006-2010)  
+Steering Committee, PSTC Compton Fellowship Program (2002-2010)  
+Seminar Series Coordinator (2003-2004)  
+Seminar Series Coordinator (2015)  
+Chair, Pre-Tenure Mentorship Committee for Dr. Robert Fletcher (2009-2012)  
+Search and Screen Committee, Research Asst. Professor, Zoo Wildlife Conservation Biology (2020)   
+Search and Screen Committee, Asst. Professor of Population Ecology (2017)  
+Search and Screen Committee, Department Head (2006)  
+Search and Screen Committee, Asst. Professor of Landscape Ecology (2004)  
+Search and Screen Committee, Asst. Professor of Conservation Genetics, WEC (2004)  
+Chair, Peer Teaching Evaluation Committee for Dr. Ethan White (2019-2020)  
+Chair, Peer Teaching Evaluation Committee for Dr. Morgan Ernest (2017-2018)  
+Chair, Peer Teaching Evaluation Committee for Dr. Lyn Branch (2011)  
+Chair, Peer Teaching Evaluation Committee for Dr. Bill Pine (2010)  
+Chair, Peer Teaching Evaluation Committee for Dr. Robert Fletcher (2009)  
+Peer Teaching Evaluation Committee for Dr. Madan Oli (2003)  
+Peer Teaching Evaluation Committee for Dr. Bill Pine (2015)  
+
+\endgroup 
+
+### SERVICE - UF CENTER FOR LATIN AMERICAN STUDIES  
+\begingroup 
+\setlength{\leftskip}{.2cm}
+
+LAS Faculty Advisory Council (2020-2023)  
+LAS Bylaws Revision Committee (2020-2021)  
+LAS Merit Evaluation Committee (2015-1017)  
+LAS Graduate Admissions and Fellowship Committee (2007)  
+Chair, Search and Screen Committee, Lecturer in Latin American Studies (2015)  
+Chair, LAS Awards and Scholarship Committee (2019)  
+Search and Screen Committee, LAS Communications Coordinator (2015)  
+Bacardi Seminar Series Coordinator (Spring 2015)  
+Academic Advisor, Tropical Conservation and Development (TCD) Program (2008-2011) 
+Faculty Advisor, TCD Graduate Student Organization (2008-2016)  
+Steering Committee, TCD Program (2002-2008, 2010-2016, 2018-present)  
+Chair, TCD Fellowship Committee (2012)  
+Chair, TCD Field Research Grants Committee (2004, 2008, 2009, 2010, 2015, 2020)  
+Chair, Marianne Schmink Award Selection Committee (2010, 2011, 2013)  
+TCD Field Research Grants Committee (2003, 2004)  
+TCD Fellowship Committee (2003-2005)  
+Organizing Committee, TCD Strategic Planning (2007-2008)  
+Curriculum Committee, Master’s Program in Sustainable Development Practice (2010-2012)  
+Advisory Council, Amazon Conservation Leadership Initiative (2004-2005)  
+Advisory Committee, Pan-Amazon Community of Practice Project (2018-2020) 
+
+\endgroup  
+
+### SERVICE - OTHER INSTITUTIONS  
+\begingroup 
+\setlength{\leftskip}{.2cm}
+
+Tenure and Promotion Portfolio Evaluations: 2020 (3), 2018 (2), 2017 (1), 2016 (3), 2015 (1), 2011 (1)  
+ASN/SSE/SSB Committee on Development a Professional Code of Ethics (2018-2019)  
+External Advisor, 2nd Planning Workshop, Brazilian Biodiversity and Ecosystem Services Synthesis Center (2018)  
+Discussant, Research & Writing Conference, Florida Education Fund/McKnight Doctoral Fellowship Program (2016)  
+Co-host & Co-organizer, UC Davis Population Biology Workshop in Ecology (2000)  
+Student Representative, UC Davis Population Biology GRT Executive Committee (1996-1997)  
+UC San Diego EAP Selection Committee, Tropical Biology Program (1994)  
+
+\endgroup 
+
+### SERVICE - ASSOCIATION FOR TROPICAL BIOLOGY AND CONSERVATION  
+\begingroup 
+\setlength{\leftskip}{.2cm}
+
+President (2021)  
+President-Elect (2020)  
+Student Field Grants Selection Committee (2020)  
+Crowdfunding Workshop, Annual Meeting of the ATBC (2018) 
+Annual Meeting Scientific Committee (2017, 2012)  
+Councillor (2009-2011)  
+Conservation Committee (2004-2006)  
+Co-organizer, Symposium on Amazonian Conservation, Annual Meeting (2004)  
+
+\endgroup 
+
+### SERVICE AS A REVIEWER AND EDITOR  
+
+\begingroup 
+\setlength{\leftskip}{.2cm}
+
+
+*__Biotropica:__* Editor-in-Chief (2013-2019), Associate Editor (2010-2013), Editorial Board (2007-2019)  
+
+*__Ecology__*, *__Ecological Monographs__*, and *__Ecological Applications__*: Editorial Board (2008-2012)  
+
+__*Ad hoc* referee for journals (No. of reviews):__ *Nature Human Behavior* (1), *Information, Communication,& Society* (1), *Ecology* (3), *Ecology and Evolution* (1),  *Methods in Ecology & Evolution* (1), *Conservation Biology* (5), *Biological Conservation* (7), *Ecological Applications* (1), *Oecologia* (4), *Journal of Tropical Ecology* (2), *Journal of Ecology* (6), *New Phytologist* (1), *American Naturalist* (3), *Plant Ecology* (3), *Proc. Roy. Soc. Lond. B* (1), *Journal of Applied Ecology* (1), *Biotropica* (10), *Ecography* (5), *Ciência y Cultura* (2), *Oikos* (1), *Revista Chilena de Historia Natural* (1), *Biochemical Systematics & Ecology* (1), *Ecology Letters* (2), *Insectes Sociaux* (1), *American J. of Botany* (1), *Scientometrics* (1), *F1000* (1), *Desenvolvimento e Meio Ambiente* (1), *PLoS Biology* (2), *PLoS ONE* (1), *Theoretical Ecology* (1)
+
+__US National Science Foundation:__ Proposal Review Panels: DEB Ecology (2005), DEB Population and Evolutionary Processes (2007), DEB Population and Community Ecology (2011, 2013). Ad-hoc proposal review: UMEB Program (2), RUI Program (1), Ecological Biology Program (3), AMERICAS Dissertation Improvement Grant (1), NSF Global Scientists and Engineers Program (1), Population and Evolutionary Processes Program (1), International Research Fellowship Program (1), Population and Community Ecology Program (2), Dimensions of Biodiversity Program (1)
+
+__Other service as a reviewer (No. of reviews or year of service)__: *Red Line Editorial (2019, technical review of a K-12 book), Mindlin Foundation (2018), Cornell University Press (2017), Instituto Serrapliheira (2017), HHMI Professors Program (2017), UF FAES/CRIS Project Proposals (2), U. of Chicago Press (1), Alfred P. Sloan Foundation Minority Ph.D. Program (3). National Geographic Society (1), U. of California Press (1)  
+
+\endgroup 
+### INVITED PRESENTATIONS
+```{r talks, echo=FALSE,message = FALSE,warning=FALSE}
+talks<-read_csv("./talks.csv") %>% select(-year) %>% replace_na(list(year2=""))
+kbl(talks, 
+      format    = "latex", 
+      align = "l",
+      longtable = T, 
+      row.names = FALSE,
+      col.names = NULL,
+      booktabs=T,
+      linesep = "") %>%
+  kable_styling(bootstrap_options = c("hover"),
+                latex_options = c("scale_down"),
+                full_width = F,
+                font_size = 10,
+                position = "left") %>%
+  sub("\\\\toprule", "", .) %>%
+  sub("\\\\bottomrule", "", .)
+
+```
+
+### INTERVIEWS & MEDIA APPEARANCES  
+\begingroup 
+\setlength{\leftskip}{.2cm}
+
+**2019:** USA Today, CBC News Network (Canada), The Atlantic, The Verge, MSNBC’s Velshi & Ruhle, WIRED Magazine (2), Mashable, BBC World Service (UK), The Miradas Podcast  **2018:** Popular Science, Associated Press, National Geographic, Scholastic Classroom Magazines, Gainesville Sun, Mongabay.com   **2017:** The Wire (India), Chemistry World, Nature, Gainesville Sun  **2016:** Chronicle of Higher Education, DailyDot, Nature, Mongabay.com  **2014:** NPR’s Morning Edition/Joe’s Big Idea, TV Acre (Rede Globo Rio Branco) Bom Dia Amazônia, TV Gazetta (Rede Record Rio Branco) Programa ‘Entrevista com Rogério Wenceslau’, Estado de São Paulo, Nature.com, WUFT, Science/Science Insider, Howler Soccer Magazine’s Dummy Podcast  **2013:** SciDevNet, WSLR Florida-Caribe Radio Show  **2006:** The Scientist Magazine, Science Minority Scientists Network  **2005:** Science’s Next Wave , Televisão Universitária, Uberlândia, Folha de São Paulo  **2004:** Science Magazine’s Minority Scientists Network  **2002:** NPR’s Weekend Edition Saturday, BBC World Service Radio 4, Austrian Public Television’s Modern Times. 
+
+
+\endgroup
+
+### PROFESSIONAL DEVELOPMENT  
+\begingroup 
+\setlength{\leftskip}{.2cm}  
+
+University of Florida Science Communication Academy (2013)  
+California Academy of Sciences: The Ant Course: Taxonomy  & Systematics (Costa Rica, 2004)  
+Organization for Tropical Studies: Tropical Plant Systematics 96-9 (Costa Rica, 1996)  
+University of California Education Abroad Program: Tropical Biology Quarter (Costa Rica, 1993) 
+
+\endgroup
+
+### MEMBERSHIPS IN PROFESSIONAL SOCIETIES  
+
+\begingroup 
+\setlength{\leftskip}{.2cm}  
+Ecological Society of America  
+Association for Tropical Biology and Conservation  
+American Association for the Advancement of Science  
+International Society for Scientometrics and Infometrics  
+
+\endgroup

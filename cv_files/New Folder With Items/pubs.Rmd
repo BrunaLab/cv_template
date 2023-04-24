@@ -1,0 +1,74 @@
+---
+title: "Curriculum Vitae"
+# title: "&nbsp;"
+author: "Emilio M. Bruna"
+email: embruna@ufl.edu
+web: www.BrunaLab.org
+github: embruna
+twitter: BrunaLab
+phone: "(352) 514-3935"
+date: "`r format(Sys.time(), '%B %Y')`"
+geometry: margin=1in
+linkcolor: darkmidnightblue
+urlcolor: darkmidnightblue
+# tables: true
+# jobtitle: "Professor & Distinguished Teaching Scholar, University of Florida"
+# address: "PO Box 110430 · 110 Newins-Ziegler Hall · Gainesville, FL 32611-040"
+fontawesome: yes
+# bibliography: BrunaPublications.bib
+bibliography: EMB_publications.bib
+# chapters.bib
+csl: brunacv2.csl
+# bibliography: BrunaPublications.bib
+# bibliography: ./cv_files/BrunaPublications.bib
+# bibliography_software: chapters.bib
+# csl: biotropica.csl
+# csl: ./cv_files/brunacv2.csl
+updated: yes
+# site: bookdown::bookdown_site
+header-includes:
+- \usepackage{etaremune} # for reverse-numbered list of publications etc
+- \usepackage[default]{sourcesanspro}
+- \usepackage{fancyhdr} # modify header into left, center, right
+- \pagestyle{fancy} # cues the use of fancy headers
+- \fancyfoot{} # cues the use of fancy footer
+- \fancyfoot[R]{`r format(Sys.time(), '%B %Y')`} # month & year on footer right
+- \fancyhead[R]{Emilio M. Bruna, p. \thepage} # name and page on header right
+- \usepackage{setspace} # manipulate line spacing 
+- \usepackage{parskip} # manipulate indents and spacing before/after paragraphs 
+- \usepackage{xcolor} # changes colors of text
+- \AtBeginDocument{\let\maketitle\relax} # this removes default title section
+  # to center to top level (#) headings (my name) and change color of font
+  # more info # https://www.ctan.org/pkg/sectsty
+- \usepackage{sectsty} \sectionfont{\centering\color{darkmidnightblue}}
+# to center to sub-sub-headings (###) and change color of font
+- \usepackage{sectsty} \subsubsectionfont{\color{darkmidnightblue}}
+# http://latexcolor.com/ to choose colors
+# define the colors used above with rgb codes
+- \definecolor{darkcerulean}{rgb}{0.03, 0.27, 0.49}
+- \definecolor{darkmidnightblue}{rgb}{0.0, 0.2, 0.4}
+# - \usepackage{ragged2e}
+# # - \setlength\RaggedRightParindent{15pt}
+# - \RaggedRight - # make the right margin ragged
+# https://tex.stackexchange.com/questions/258714/prevent-hyphenation-across-lines-enforce-right-margin
+# - \hyphenpenalty=10000 #to suppress ordinary hyphenation
+# - \exhyphenpenalty=10000 #to prohibit line breaks at explicit hyphens.
+# - \setstretch{1.0}
+
+# https://babichmorrowc.github.io/post/changing-fonts-in-rmarkdown-pdfs/
+
+output:
+   pdf_document: default
+   html_document:
+   df_print: paged
+   toc: false
+# 
+# 
+# 
+#    # \printbibliography[type=book,title={Books only}]
+---
+---
+nocite: '@*'
+...
+
+<!-- <div id="refs"></div>  -->

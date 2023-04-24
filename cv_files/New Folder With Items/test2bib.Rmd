@@ -1,0 +1,53 @@
+---
+title: "Having separate bibliographies in an Rmarkdown document"
+author: "F. Rodriguez-Sanchez"
+output:
+  html_document:
+    df_print: paged
+  github_document:
+    pandoc_args: --lua-filter=multiple-bibliographies.lua
+bibliography_main: main.bib
+bibliography_suppl: suppl.bib
+---
+
+```{r echo=FALSE}
+library("knitcitations")
+cleanbib()   
+cite_options(citation_format = "pandoc")
+```
+
+
+cite something `r citep(citation("lme4"))`
+
+
+```{r include=FALSE}
+write.bibtex(file = "main.bib")
+```
+
+
+## Main bibliography
+
+::: {#refs_main}
+:::
+
+
+## Here starts the supplement
+
+```{r echo=FALSE}
+cleanbib()
+```
+
+cite something else `r citep(citation("ggplot2"))`
+
+also cite lme4 `r citep(citation("lme4"))`
+
+
+```{r include=FALSE}
+write.bibtex(file = "suppl.bib")
+```
+
+
+## Supplementary bibliography
+
+::: {#refs_suppl}
+:::
