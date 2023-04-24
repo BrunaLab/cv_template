@@ -111,7 +111,7 @@ Gainesville, FL 32611-1234 USA\hfill&nbsp;[\@YouTwitterOrGithub](https://twitter
 \setlength{\leftskip}{.2cm} 
 2022\hspace{4mm}Graduate Fellowship, University of Florida  
 2020\hspace{4mm}Best Poster Presentation, Ecological Society of Mexico  
-2020\hspace{4mm}Outstanding Teaching Assistant, UF College of Agricultural and Life   Sciences    
+2020\hspace{4mm}Outstanding Teaching Assistant, College of Science, Univ. of Florida   
 
 \endgroup
 
