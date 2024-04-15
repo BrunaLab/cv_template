@@ -1,30 +1,55 @@
 ---
+title: "Curriculum Vitae"
+author: "FirstName LastName"
+date: "`r format(Sys.time(), '%B %Y')`"
+
+web: www.Website.org
+github: mygithub
+twitter: myTwitter
+phone: "(352) 555-5555"
+email: email@ufl.edu
+
+updated: yes
+
+header-includes:
+- \usepackage{etaremune} # for reverse-numbered list of publications etc
+# see https://ctan.math.utah.edu/ctan/tex-archive/macros/latex/contrib/etaremune/etaremune.pdf
+- \usepackage[default]{sourcesanspro}
+- \usepackage{fancyhdr} # modify header into left, center, right
+- \pagestyle{fancy} # cues the use of fancy headers
+- \fancyfoot{} # cues the use of fancy footer
+- \fancyfoot[R]{`r format(Sys.time(), '%B %Y')`} # month & year on footer right
+- \fancyhead[R]{FirstName LastName, p. \thepage} # name and page on header right
+- \fancyhead[L]{ } # name and page on header left
+- \usepackage{setspace} # manipulate line spacing 
+- \usepackage{parskip} # manipulate indents and spacing before/after paragraphs 
+- \usepackage{xcolor} # changes colors of text
+- \AtBeginDocument{\let\maketitle\relax} # this removes default title section
+  # to center to top level (#) headings (my name) and change color of font
+  # more info # https://www.ctan.org/pkg/sectsty
+- \usepackage{sectsty} \sectionfont{\centering\color{darkmidnightblue}}
+# centersub-headings (##) & sub-sub-headings (###) & change font color
+- \usepackage{sectsty} \subsectionfont{\color{darkmidnightblue}}
+- \usepackage{sectsty} \subsubsectionfont{\color{darkmidnightblue}}
+# http://latexcolor.com/ to choose colors
+# define the colors used above with rgb codes
+- \definecolor{darkcerulean}{rgb}{0.03, 0.27, 0.49}
+- \definecolor{darkmidnightblue}{rgb}{0.0, 0.2, 0.4}
+- \usepackage{xhfill} # modification of line color and width
+
 geometry: margin=1in
 linkcolor: darkmidnightblue
 urlcolor: darkmidnightblue
 fontawesome: yes
-updated: yes
-header-includes:
-- \usepackage{etaremune} # used to number pubs backwards
-- \usepackage[default]{sourcesanspro}
-- \usepackage{fancyhdr} # to alter header and footer
-- \pagestyle{fancy} 
-- \fancyfoot[R]{`r format(Sys.time(), '%B %Y')`} # bottom right of page
-- \fancyhead[R]{Emilio M. Bruna, p. \thepage} # top right of page
-- \usepackage{setspace}
-- \usepackage{parskip}
-- \usepackage{xcolor}
-- \AtBeginDocument{\let\maketitle\relax} # removes the standard Rmd title / date
-# this changes the location and color of the sections, subsections, etc.
-- \usepackage{sectsty} \sectionfont{\centering\color{darkmidnightblue}} # 
-- \usepackage{sectsty} \subsubsectionfont{\color{darkmidnightblue}}
-# define colors
-- \definecolor{darkcerulean}{rgb}{0.03, 0.27, 0.49}
-- \definecolor{darkmidnightblue}{rgb}{0.0, 0.2, 0.4}
-- \usepackage{xhfill} # used to make the line
-output: pdf_document
-# output: word_document
+
+output:
+  pdf_document: default
+  # html_document: null
+  df_print: paged
+  toc: no
+  # word_document: default
 ---
+
 
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = FALSE,message=FALSE,warning=FALSE)
@@ -39,7 +64,7 @@ library(kableExtra)
 <!-- this next line suppresses the header (line, name,  page number) on 1st page -->
 \thispagestyle{empty}  
 
-# YOUR NAME
+# Your Name
 \vspace{-0.3cm}  <!--space between name and address -->
 <!--\hfill moves all way to right -->
 University of Florida\hfill email@ufl.edu  
@@ -49,19 +74,13 @@ Gainesville, FL 32611-1234 USA\hfill&nbsp;[\@YouTwitterOrGithub](https://twitter
 \vspace{-0.5cm}  <!--there was too much space, so reduced it with minus: -Xcm -->
 
 \par\noindent\rule{\textwidth}{0.4pt} <!-- makes the line   -->
-<!-- \textbf{\textcolor{darkmidnightblue}{RESEARCH \& TEACHING INTERESTS:}} some, keywords, about, your research topics   -->
 
-<!-- \textbf{\textcolor{darkmidnightblue}{LANGUAGES:}} Fluent in Spanish, English, Esperanto, and French   -->
 
 \vspace{-0.6cm}  
 
-<!-- ```{r, child=c('one.Rmd', 'two.Rmd')} -->
-<!-- ``` -->
+<!-- ------------------------------------- -->
 
-<!-- ```{r, child='one.Rmd'} -->
-<!-- ``` -->
-
-### EDUCATION
+### Education
 <!--to indent a block of stuff treat it as a 'group' and then set leftskip -->
 <!--be sure to indicate where the group ends with \endgroup -->
 
@@ -69,6 +88,7 @@ Gainesville, FL 32611-1234 USA\hfill&nbsp;[\@YouTwitterOrGithub](https://twitter
 \setlength{\leftskip}{.2cm} 
 
 <!-- ### EDUCATION \hrulefill\ -->
+
 <!-- TEXT \hrulefill\ -->
 <!-- Here is some text\xfill{1pt} \par -->
 <!-- Here is some text\xfill{8pt} \par -->
@@ -80,8 +100,6 @@ Gainesville, FL 32611-1234 USA\hfill&nbsp;[\@YouTwitterOrGithub](https://twitter
 
 <!-- ### EDUCATION \hrulefill -->
 
-
-
 2001\hspace{4mm} Ph.D. in Biology, University of Mars  
 <!-- &nbsp;&nbsp;&nbsp;&nbsp;\hspace{6mm}  _Dissertation Advisor: Person Name_   -->
 1995\hspace{4mm} M.S. in Biology, University of Venus  
@@ -90,7 +108,10 @@ Gainesville, FL 32611-1234 USA\hfill&nbsp;[\@YouTwitterOrGithub](https://twitter
 
 \endgroup 
 
-### PROFESSIONAL APPOINTMENTS
+<!-- ------------------------------------- -->
+
+### Professional Appointments
+
 \begingroup 
 \setlength{\leftskip}{.2cm} 
 
@@ -103,20 +124,23 @@ Gainesville, FL 32611-1234 USA\hfill&nbsp;[\@YouTwitterOrGithub](https://twitter
 
 \endgroup
 
+<!-- ------------------------------------- -->
 
 \vspace{-0.2cm}
-### FELLOWSHIPS AND AWARDS
+### Fellowships
 
 \begingroup 
 \setlength{\leftskip}{.2cm} 
+
 2022\hspace{4mm}Graduate Fellowship, University of Florida  
 2020\hspace{4mm}Best Poster Presentation, Ecological Society of Mexico  
-2020\hspace{4mm}Outstanding Teaching Assistant, College of Science, Univ. of Florida   
+2020\hspace{4mm}Outstanding Teaching Assistant, College of Science, Univ. of Florida
 
 \endgroup
 
+<!-- ------------------------------------- -->
 
-### RESEARCH GRANTS    
+### Grants
 
 \begingroup 
 \setlength{\leftskip}{.2cm}  
@@ -127,7 +151,9 @@ Gainesville, FL 32611-1234 USA\hfill&nbsp;[\@YouTwitterOrGithub](https://twitter
 
 \endgroup
 
-### PUBLICATIONS  
+<!-- ------------------------------------- -->
+
+### Publications 
 
 1. Squire, K. (2011). Video games and learning: Teaching and participatory culture in the digital age. Teachers College Press. 
 
@@ -135,93 +161,45 @@ Gainesville, FL 32611-1234 USA\hfill&nbsp;[\@YouTwitterOrGithub](https://twitter
 
 3. Wong, L. H., Chai, C. S., & Tan, E. (2016). Virtual laboratories in science education: A review of the literature. Journal of Educational Technology Development and Exchange, 9(1), 1-19. 
 
-<!-- ### SOFTWARE  -->
+<!-- ------------------------------------- -->
 
-<!-- ### OTHER WRITING & SCHOLARLY COMMUNICATION -->
+<!-- ### Manuscripts in Preparation  -->
 
-<!-- ### PUBLICLY ARCHIVED DATASETS & CODE  -->
-
-<!-- ### MANUSCRIPTS IN PREPARATION  -->
-
-### TEACHING EXPERIENCE
+### Teaching Experience
 \begingroup 
 \setlength{\leftskip}{.2cm}  
+
 Guest Lecture, The Future of Rain Forests (Undergraduate, 2022)  
 Instructor, Data Collection & Field Methods (Graduate, 2019)  
 
 \endgroup 
 
-### GRADUATE STUDENTS ADVISED
 
-```{r GradStudents, echo=FALSE,message = FALSE,warning=FALSE}
-grad_advised<-read_csv("./cv_files/grad_advised.csv") %>% filter(role=="advisor") %>% select(-role)
-kbl(grad_advised,digits = 1,
-                  format = "latex",
-                  align="l",
-    col.names = NULL,
-    longtable = T,
-                  row.names = FALSE,
-                  booktabs=T,
-                  linesep = "") %>%
-  kable_styling(bootstrap_options = c("hover"),
-                latex_options = c("scale_down"),
-                full_width = F,
-                font_size = 10,
-                position = "left") %>%
-  sub("\\\\toprule", "", .) %>%
-  sub("\\\\bottomrule", "", .)
-```
 
-### DOCTORAL STUDENT COMMITTEE SERVICE
+<!-- ------------------------------------- -->
 
-```{r DocCmte, echo=FALSE,message = FALSE,warning=FALSE}
-grad_advised<-read_csv("./cv_files/grad_advised.csv") %>% filter(role=="doc_cmte") %>% select(-role)
-kbl(grad_advised,digits = 1,
-                  format = "latex",
-                  align="l",
-                  col.names = NULL,
-                  row.names = FALSE,
-                  booktabs=T,
-                  longtable = T, 
-                  linesep = "") %>%
-  kable_styling(bootstrap_options = c("hover"),
-                latex_options = c("scale_down"),
-                full_width = F,
-                font_size = 10,
-                position = "left") %>%
-  sub("\\\\toprule", "", .) %>%
-  sub("\\\\bottomrule", "", .)
-```
 
-### MASTERS STUDENT COMMITTEE SERVICE
-```{r MastersCmte, echo=FALSE,message = FALSE,warning=FALSE}
-grad_advised<-read_csv("./cv_files/grad_advised.csv") %>% filter(role=="masters_cmte") %>% select(-role)
-kbl(grad_advised,digits = 1,
-                  format = "latex",
-                  align="l",
-        longtable = T, 
-    col.names = NULL,
-                  row.names = FALSE,
-                  booktabs=T,
-                  linesep = "") %>%
-  kable_styling(bootstrap_options = c("hover"),
-                latex_options = c("scale_down"),
-                full_width = F,
-                font_size = 10,
-                position = "left") %>%
-  sub("\\\\toprule", "", .) %>%
-  sub("\\\\bottomrule", "", .)
-```
 
-### SERVICE
+### Student Advising
+
+
+<!-- ------------------------------------- -->
+
+
+### Service
 
 \begingroup 
 \setlength{\leftskip}{.2cm}
+
 Search Committee, UF QUEST Program (2023)  
 Samuel P. Harn Museum of Art Faculty Council (2012-2015)   
 Selection Committee, UF Undergraduate Faculty Mentor/Advisor of the Year (2022)    
 
-__Referee for journals (No. of reviews):__ 
+
+<!-- ------------------------------------- -->
+
+
+### Referee for journals (No. of reviews)
 \setlength{\leftskip}{.2cm}  
 
 *Trends in Ecology and Evolution* (1)   
@@ -230,52 +208,45 @@ __Referee for journals (No. of reviews):__
 
 \endgroup 
 
-### PRESENTATIONS
-```{r talks, echo=FALSE,message = FALSE,warning=FALSE}
-talks<-read_csv("./cv_files/talks.csv", col_types = cols(.default = "c")) %>% 
-  select(-year)  %>% 
-  replace_na(list(year2=""))
-kbl(talks, 
-      format    = "latex", 
-      align = "l",
-      longtable = T, 
-      row.names = FALSE,
-      col.names = NULL,
-      booktabs=T,
-      linesep = "") %>%
-  kable_styling(bootstrap_options = c("hover"),
-                latex_options = c("scale_down"),
-                full_width = F,
-                font_size = 10,
-                position = "left") %>%
-  sub("\\\\toprule", "", .) %>%
-  sub("\\\\bottomrule", "", .)
-```
 
-<!-- ### INTERVIEWS & MEDIA APPEARANCES   -->
-<!-- \begingroup  -->
-<!-- \setlength{\leftskip}{.2cm}   -->
+<!-- ------------------------------------- -->
 
-<!-- 2013\hspace{4mm} Item   -->
-<!-- 2013\hspace{4mm} Item   -->
 
-<!-- \endgroup -->
+### Presentations 
 
-<!-- ### PROFESSIONAL DEVELOPMENT   -->
-<!-- \begingroup  -->
-<!-- \setlength{\leftskip}{.2cm}   -->
+<!-- Invited, submitted, posters -->
 
-<!-- 2013\hspace{4mm} Item   -->
-<!-- 2013\hspace{4mm} Item   -->
+<!-- ------------------------------------- -->
 
-<!-- \endgroup -->
 
-<!-- ### MEMBERSHIPS IN PROFESSIONAL SOCIETIES   -->
+### Extension / Outreach Activities
 
-<!-- \begingroup  -->
-<!-- \setlength{\leftskip}{.2cm}   -->
 
-<!-- Ecological Society of America   -->
-<!-- Association for Tropical Biology and Conservation   -->
+<!-- ------------------------------------- -->
+<!-- OTHER CATEGORIES --->
 
-<!-- \endgroup -->
+<!-- ### Professional service -->
+<!-- ### Professional memberships -->
+<!-- ### Professional Development/Training -->
+<!-- ### Technical Skills   -->
+<!-- ### Language Skills   -->
+<!-- ### Presentations   -->
+<!-- ### 'Named' Scholarships & Fellowships   -->
+<!-- ### Certifications & Licenses   -->
+<!-- ### Foreign Study   -->
+<!-- ### International Experience   -->
+<!-- ### Programming Skills   -->
+<!-- ### Reviewer for Journals   -->
+<!-- ### Editorial Boards   -->
+<!-- ### Exhibits   -->
+<!-- ### Organizing events -->
+<!-- ### Internships   -->
+<!-- ### Administrative Experience   -->
+<!-- ### Supervisory Experience   -->
+<!-- ### Consulting Experience   -->
+<!-- ### Advising   -->
+<!-- ### Outreach   -->
+<!-- ### Advisory Committees   -->
+<!-- ### Guest Lectures in Courses -->  
+<!-- ### Language Skills -->  
+<!-- ### Patents   -->
