@@ -155,11 +155,27 @@ Gainesville, FL 32611-1234 USA\hfill&nbsp;[\@YouTwitterOrGithub](https://twitter
 
 ### Publications 
 
+1. Wang, Q., Chen, W., & Liang, Y. (2017). Effects of inquiry-based learning supported by mobile technology on students’ learning achievements and attitudes. Journal of Educational Technology Development and Exchange, 8(1), 1-20. 
+
+1. Wong, L. H., Chai, C. S., & Tan, E. (2016). Virtual laboratories in science education: A review of the literature. Journal of Educational Technology Development and Exchange, 9(1), 1-19. 
+
 1. Squire, K. (2011). Video games and learning: Teaching and participatory culture in the digital age. Teachers College Press. 
 
-2. Wang, Q., Chen, W., & Liang, Y. (2017). Effects of inquiry-based learning supported by mobile technology on students’ learning achievements and attitudes. Journal of Educational Technology Development and Exchange, 8(1), 1-20. 
+<!-- IF YOU WANT REVERSE NUMBERING -->
 
-3. Wong, L. H., Chai, C. S., & Tan, E. (2016). Virtual laboratories in science education: A review of the literature. Journal of Educational Technology Development and Exchange, 9(1), 1-19. 
+<!-- \begin{etaremune} -->
+
+<!-- \item -->
+<!-- Wang, Q., Chen, W., & Liang, Y. (2017). Effects of inquiry-based learning supported by mobile technology on students’ learning achievements and attitudes. \textit{\textbf{Journal of Educational Technology Development and Exchange}}, 8(1), 1-20.  -->
+
+<!-- \item -->
+<!-- Wong, L. H., Chai, C. S., & Tan, E. (2016). Virtual laboratories in science education: A review of the literature. \textit{\textbf{Journal of Educational Technology Development and Exchange}}, 9(1), 1-19.  -->
+
+<!-- \item -->
+<!-- Squire, K. (2011). Video games and learning: Teaching and participatory culture in the digital age. Teachers College Press. -->
+
+<!-- \end{etaremune} -->
+
 
 <!-- ------------------------------------- -->
 
