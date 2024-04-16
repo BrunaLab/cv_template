@@ -54,8 +54,8 @@ output:
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = FALSE,message=FALSE,warning=FALSE)
 library(tidyverse)
-library(gridExtra)
-library(kableExtra)
+# library(gridExtra)
+# library(kableExtra)
 # library(citr)
 # library(RefManageR)
 ```
